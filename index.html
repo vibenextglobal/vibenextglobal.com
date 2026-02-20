@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VibeNext Global LLP | Premium Herbal Exporter from India</title>
+<title>VibeNext Global LLP | Premium Herbal Exporter</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -23,25 +23,25 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7f6;
+background:#f4f7f5;
 }
 
 /* HEADER */
 
 header{
 position:fixed;
-width:100%;
 top:0;
+width:100%;
 background:white;
 padding:20px 60px;
 display:flex;
 justify-content:flex-end;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
 z-index:1000;
 }
 
 header a{
-margin-left:40px;
+margin-left:35px;
 text-decoration:none;
 color:#1b5e20;
 font-weight:600;
@@ -50,7 +50,6 @@ transition:0.3s;
 
 header a:hover{
 color:#4CAF50;
-transform:scale(1.05);
 }
 
 /* HERO */
@@ -74,12 +73,11 @@ animation:fadeIn 2s;
 
 .hero h1{
 font-size:52px;
-font-weight:700;
 }
 
 .hero p{
 font-size:20px;
-margin-top:15px;
+margin-top:10px;
 }
 
 .btn{
@@ -88,45 +86,43 @@ margin-top:25px;
 padding:14px 35px;
 background:linear-gradient(45deg,#4CAF50,#2e7d32);
 color:white;
-text-decoration:none;
 border-radius:30px;
-font-weight:600;
+text-decoration:none;
 transition:0.4s;
 }
 
 .btn:hover{
 transform:translateY(-3px);
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* SECTION */
 
 .section{
-padding:80px 60px;
+padding:90px 60px;
 text-align:center;
 }
 
 .section h2{
-font-size:36px;
-margin-bottom:40px;
+font-size:38px;
+margin-bottom:50px;
 color:#1b5e20;
 }
 
-/* PRODUCTS */
+/* PRODUCT CARDS */
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
 }
 
 .card{
 background:white;
-padding:20px;
+padding:25px;
 border-radius:15px;
 box-shadow:0 10px 30px rgba(0,0,0,0.08);
 transition:0.4s;
-animation:fadeUp 1s;
+text-align:left;
 }
 
 .card:hover{
@@ -138,6 +134,21 @@ width:100%;
 height:200px;
 object-fit:cover;
 border-radius:10px;
+margin-bottom:15px;
+}
+
+.card h3{
+color:#1b5e20;
+margin-bottom:10px;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:6px;
+font-size:14px;
 }
 
 /* BADGES */
@@ -180,13 +191,7 @@ background:linear-gradient(45deg,#4CAF50,#2e7d32);
 color:white;
 border:none;
 border-radius:30px;
-font-size:16px;
 cursor:pointer;
-transition:0.3s;
-}
-
-button:hover{
-transform:scale(1.03);
 }
 
 /* FOOTER */
@@ -210,25 +215,13 @@ padding:18px;
 border-radius:50%;
 font-size:26px;
 text-decoration:none;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* ANIMATIONS */
+/* ANIMATION */
 
 @keyframes fadeIn{
 from{opacity:0;}
 to{opacity:1;}
-}
-
-@keyframes fadeUp{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
 }
 
 </style>
@@ -242,11 +235,9 @@ transform:translateY(0);
 <a href="#home">Home</a>
 <a href="#products">Products</a>
 <a href="#certifications">Certifications</a>
-<a href="#markets">Export Markets</a>
 <a href="#contact">Contact</a>
 
 </header>
-
 
 <section class="hero" id="home">
 
@@ -254,13 +245,11 @@ transform:translateY(0);
 
 <h1>VibeNext Global LLP</h1>
 
-<p>Premium Exporter of Herbal & Nutraceutical Products from India</p>
+<p>Premium Herbal Exporter from India</p>
 
 <p>Email: info@vibenextglobal.com</p>
 
-<a href="#products" class="btn">View Products</a>
-
-<a href="#contact" class="btn">Send Inquiry</a>
+<a href="#products" class="btn">Explore Products</a>
 
 </div>
 
@@ -269,38 +258,80 @@ transform:translateY(0);
 
 <section class="section" id="products">
 
-<h2>Our Export Products</h2>
+<h2>Our Premium Herbal Products</h2>
 
 <div class="products">
 
 <div class="card">
 <img src="images/moringa.jpg">
-<h3>Moringa Powder</h3>
+<h3>Moringa Powder Benefits</h3>
+<ul>
+<li>Boosts immunity naturally</li>
+<li>Improves energy and stamina</li>
+<li>Supports healthy blood sugar levels</li>
+<li>Rich in antioxidants</li>
+<li>Supports heart health</li>
+</ul>
 </div>
 
 <div class="card">
 <img src="images/aonla.jpg">
-<h3>Aonla Powder</h3>
+<h3>Aonla Powder Benefits</h3>
+<ul>
+<li>Rich source of Vitamin C</li>
+<li>Improves digestion</li>
+<li>Boosts immunity</li>
+<li>Supports healthy skin and hair</li>
+<li>Powerful antioxidant</li>
+</ul>
 </div>
 
 <div class="card">
 <img src="images/ashwagandha.jpg">
-<h3>Ashwagandha</h3>
+<h3>Ashwagandha Benefits</h3>
+<ul>
+<li>Reduces stress and anxiety</li>
+<li>Improves brain function</li>
+<li>Boosts testosterone levels</li>
+<li>Improves muscle strength</li>
+<li>Supports immune system</li>
+</ul>
 </div>
 
 <div class="card">
 <img src="images/shilajit.jpg">
-<h3>Shilajit</h3>
+<h3>Shilajit Benefits</h3>
+<ul>
+<li>Boosts energy levels</li>
+<li>Improves stamina</li>
+<li>Supports brain health</li>
+<li>Improves testosterone</li>
+<li>Anti-aging properties</li>
+</ul>
 </div>
 
 <div class="card">
 <img src="images/turmeric.jpg">
-<h3>Turmeric</h3>
+<h3>Turmeric Benefits</h3>
+<ul>
+<li>Powerful anti-inflammatory</li>
+<li>Boosts immunity</li>
+<li>Improves digestion</li>
+<li>Supports joint health</li>
+<li>Rich in antioxidants</li>
+</ul>
 </div>
 
 <div class="card">
 <img src="images/jaggery.jpg">
-<h3>Jaggery</h3>
+<h3>Jaggery Benefits</h3>
+<ul>
+<li>Improves digestion</li>
+<li>Rich in iron</li>
+<li>Boosts immunity</li>
+<li>Natural detoxifier</li>
+<li>Provides instant energy</li>
+</ul>
 </div>
 
 </div>
@@ -318,22 +349,8 @@ transform:translateY(0);
 <div class="badge">FSSAI Certified</div>
 <div class="badge">APEDA Registered</div>
 <div class="badge">ISO Suppliers</div>
-<div class="badge">Organic Certified</div>
 
 </div>
-
-</section>
-
-
-<section class="section" id="markets">
-
-<h2>Export Markets</h2>
-
-<p>
-
-USA • UAE • Germany • UK • Canada • Australia • Saudi Arabia • France • Netherlands
-
-</p>
 
 </section>
 
@@ -346,7 +363,7 @@ USA • UAE • Germany • UK • Canada • Australia • Saudi Arabia • Fra
 
 <input type="hidden" name="_captcha" value="false">
 
-<input type="hidden" name="_autoresponse" value="Thank you for contacting VibeNext Global LLP. Our export team will contact you within 24 hours.">
+<input type="hidden" name="_autoresponse" value="Thank you for contacting VibeNext Global LLP. Our export team will contact you soon.">
 
 <input type="text" name="Name" placeholder="Your Name / Company Name" required>
 
@@ -354,11 +371,9 @@ USA • UAE • Germany • UK • Canada • Australia • Saudi Arabia • Fra
 
 <input type="text" name="Country" placeholder="Country">
 
-<input type="text" name="Phone" placeholder="Phone / WhatsApp">
+<input type="text" name="Phone" placeholder="WhatsApp Number">
 
-<input type="text" name="Product" placeholder="Product Name">
-
-<textarea name="Message" placeholder="Quantity, Packaging, Destination Port"></textarea>
+<textarea name="Message" placeholder="Your requirement"></textarea>
 
 <button type="submit">Send Inquiry</button>
 
@@ -370,16 +385,14 @@ USA • UAE • Germany • UK • Canada • Australia • Saudi Arabia • Fra
 <footer>
 
 © 2026 VibeNext Global LLP  
-Premium Herbal Exporter from India  
 Email: info@vibenextglobal.com  
 
 </footer>
 
 
-<a href="https://wa.me/919250324200?text=Hello%20VibeNext%20Global%20LLP,%20I%20am%20interested%20in%20your%20export%20products." class="whatsapp">
+<a href="https://wa.me/919250324200?text=Hello%20VibeNext%20Global%20LLP,%20I%20am%20interested%20in%20your%20products." class="whatsapp">
 W
 </a>
-
 
 </body>
 </html>
