@@ -6,44 +6,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VibeNext Global LLP | Premium Herbal Exporter from India</title>
+<title>VibeNext Global LLP | Global Herbal Exporter</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-font-family:Inter;
+font-family:'Inter',sans-serif;
 margin:0;
-background:#F4F8F6;
+background:#F5F7F6;
 color:#1A1A1A;
 }
 
+/* HEADER */
+
 header{
 background:white;
-padding:20px 60px;
+padding:18px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+box-shadow:0 2px 15px rgba(0,0,0,0.08);
 }
 
 .logo{
-font-size:26px;
 font-weight:700;
+font-size:24px;
 color:#0B3D2E;
 }
 
 nav a{
 margin-left:30px;
 text-decoration:none;
-color:#333;
 font-weight:600;
+color:#333;
 }
 
-nav a:hover{
-color:#10B981;
-}
+/* HERO */
 
 .hero{
 background:url('images/herbal-bg.jpg') center/cover;
@@ -52,16 +52,16 @@ text-align:center;
 }
 
 .hero-box{
-background:rgba(11,61,46,0.9);
+background:rgba(11,61,46,0.92);
 padding:50px;
-display:inline-block;
 border-radius:12px;
+display:inline-block;
 color:white;
 }
 
 .hero h1{
-font-family:Playfair Display;
-font-size:46px;
+font-family:'Playfair Display';
+font-size:48px;
 margin-bottom:10px;
 }
 
@@ -69,38 +69,50 @@ margin-bottom:10px;
 font-size:18px;
 }
 
-.contact-info{
-margin-top:15px;
-font-size:16px;
-}
-
 .btn{
 background:#10B981;
-padding:14px 30px;
-border:none;
-border-radius:6px;
 color:white;
-font-size:16px;
-margin-top:20px;
-display:inline-block;
+padding:14px 30px;
+border-radius:6px;
 text-decoration:none;
+display:inline-block;
+margin-top:15px;
 }
 
+/* TRUST BADGES */
+
+.badges{
+text-align:center;
+padding:40px;
+}
+
+.badge{
+display:inline-block;
+background:white;
+padding:12px 20px;
+margin:10px;
+border-radius:6px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+font-weight:600;
+}
+
+/* PRODUCTS */
+
 section{
-padding:70px 60px;
+padding:60px;
 }
 
 .title{
 text-align:center;
-font-size:34px;
-color:#0B3D2E;
-margin-bottom:40px;
+font-size:32px;
 font-weight:700;
+margin-bottom:40px;
+color:#0B3D2E;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
 }
 
@@ -108,7 +120,7 @@ gap:25px;
 background:white;
 padding:20px;
 border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
 .card img{
@@ -116,24 +128,7 @@ width:100%;
 border-radius:8px;
 }
 
-.card h3{
-color:#0B3D2E;
-}
-
-.certifications{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.cert{
-background:white;
-padding:20px;
-border-radius:8px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
-font-weight:600;
-}
+/* FORM */
 
 form{
 max-width:600px;
@@ -141,10 +136,10 @@ margin:auto;
 background:white;
 padding:30px;
 border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
-input,textarea,select{
+input,select,textarea{
 width:100%;
 padding:14px;
 margin-bottom:15px;
@@ -159,14 +154,34 @@ background:#10B981;
 color:white;
 border:none;
 border-radius:6px;
-font-size:16px;
 }
+
+/* BROCHURE */
+
+.brochure{
+text-align:center;
+padding:50px;
+}
+
+/* FOOTER */
 
 footer{
 background:#0B3D2E;
 color:white;
-text-align:center;
 padding:20px;
+text-align:center;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+}
+
+.whatsapp img{
+width:60px;
 }
 
 </style>
@@ -183,7 +198,6 @@ padding:20px;
 
 <a href="#">Home</a>
 <a href="#products">Products</a>
-<a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -196,25 +210,27 @@ padding:20px;
 
 <h1>VibeNext Global LLP</h1>
 
-<p>Premium Herbal & Nutraceutical Exporter from India</p>
+<p>Trusted Global Exporter of Premium Herbal Products</p>
 
-<div class="contact-info">
-
-Email: info@vibenextglobal.com  
-<br>
-WhatsApp: +91-XXXXXXXXXX
+<a href="#products" class="btn">Explore Products</a>
 
 </div>
 
-<a href="#products" class="btn">View Products</a>
-
 </div>
+
+<div class="badges">
+
+<div class="badge">IEC Registered Exporter</div>
+<div class="badge">FSSAI Certified</div>
+<div class="badge">APEDA Registered</div>
+<div class="badge">ISO Compliant Supplier</div>
+<div class="badge">Global Export Quality</div>
 
 </div>
 
 <section id="products">
 
-<div class="title">Our Premium Export Products</div>
+<div class="title">Our Export Products</div>
 
 <div class="products">
 
@@ -222,16 +238,14 @@ WhatsApp: +91-XXXXXXXXXX
 
 <img src="images/moringa.jpg">
 
-<h3>Moringa Leaf Powder</h3>
+<h3>Moringa Leaf</h3>
 
 <ul>
-
-<li>Rich in essential nutrients</li>
-<li>Boosts immunity naturally</li>
-<li>High global export demand</li>
-<li>Supports energy and vitality</li>
-<li>Powerful antioxidant properties</li>
-
+<li>High nutritional value</li>
+<li>Strong export demand</li>
+<li>Supports immunity</li>
+<li>Rich in antioxidants</li>
+<li>Global nutraceutical use</li>
 </ul>
 
 </div>
@@ -240,16 +254,14 @@ WhatsApp: +91-XXXXXXXXXX
 
 <img src="images/aonla.jpg">
 
-<h3>Amla Fruit Powder</h3>
+<h3>Amla Fruit</h3>
 
 <ul>
-
-<li>Excellent source of Vitamin C</li>
-<li>Supports digestive health</li>
-<li>Promotes healthy hair and skin</li>
-<li>Boosts immune system</li>
-<li>Strong global market demand</li>
-
+<li>Rich Vitamin C source</li>
+<li>Supports digestion</li>
+<li>Boosts immunity</li>
+<li>Hair & skin benefits</li>
+<li>Global export demand</li>
 </ul>
 
 </div>
@@ -258,34 +270,30 @@ WhatsApp: +91-XXXXXXXXXX
 
 <img src="images/ashwagandha.jpg">
 
-<h3>Ashwagandha Root Powder</h3>
+<h3>Ashwagandha Root</h3>
 
 <ul>
-
-<li>Reduces stress naturally</li>
-<li>Improves strength and stamina</li>
-<li>Supports mental health</li>
+<li>Stress reduction</li>
+<li>Improves stamina</li>
+<li>Supports brain function</li>
 <li>Boosts immunity</li>
-<li>Highly demanded globally</li>
-
+<li>Global herbal demand</li>
 </ul>
 
 </div>
 
 <div class="card">
 
-<img src="images/shatavari.jpg">
+<img src="images/makhana.jpg">
 
-<h3>Shatavari Root Powder</h3>
+<h3>Makhana</h3>
 
 <ul>
-
-<li>Supports hormonal balance</li>
-<li>Promotes reproductive health</li>
-<li>Boosts immunity</li>
-<li>Improves vitality</li>
-<li>Growing international demand</li>
-
+<li>Healthy superfood</li>
+<li>High export demand</li>
+<li>Rich in nutrients</li>
+<li>Global snack market use</li>
+<li>Premium export product</li>
 </ul>
 
 </div>
@@ -294,16 +302,14 @@ WhatsApp: +91-XXXXXXXXXX
 
 <img src="images/stevia.jpg">
 
-<h3>Stevia Leaf Powder</h3>
+<h3>Stevia Leaf</h3>
 
 <ul>
-
-<li>Natural sugar substitute</li>
-<li>Zero calorie sweetener</li>
+<li>Natural sweetener</li>
+<li>Zero calorie product</li>
 <li>Diabetic friendly</li>
-<li>Export quality product</li>
-<li>High global demand</li>
-
+<li>Growing export demand</li>
+<li>Global food industry use</li>
 </ul>
 
 </div>
@@ -312,16 +318,14 @@ WhatsApp: +91-XXXXXXXXXX
 
 <img src="images/shilajit.jpg">
 
-<h3>Shilajit Resin Powder</h3>
+<h3>Shilajit Resin</h3>
 
 <ul>
-
-<li>Boosts energy levels</li>
-<li>Improves stamina</li>
-<li>Supports brain health</li>
-<li>Enhances vitality</li>
 <li>Premium export product</li>
-
+<li>High global demand</li>
+<li>Supports vitality</li>
+<li>Energy enhancement</li>
+<li>Nutraceutical use</li>
 </ul>
 
 </div>
@@ -330,23 +334,11 @@ WhatsApp: +91-XXXXXXXXXX
 
 </section>
 
-<section id="certifications">
+<div class="brochure">
 
-<div class="title">Certifications</div>
-
-<div class="certifications">
-
-<div class="cert">IEC Registered Exporter</div>
-
-<div class="cert">FSSAI Certified</div>
-
-<div class="cert">APEDA Registered</div>
-
-<div class="cert">ISO Compliant Supplier</div>
+<a href="brochure.pdf" class="btn">Download Company Brochure</a>
 
 </div>
-
-</section>
 
 <section id="contact">
 
@@ -356,30 +348,28 @@ WhatsApp: +91-XXXXXXXXXX
 
 <input type="hidden" name="_captcha" value="false">
 
-<input type="text" name="Name" placeholder="Company Name / Your Name" required>
+<input type="text" name="Name" placeholder="Company Name" required>
 
 <input type="email" name="Email" placeholder="Email Address" required>
 
-<input type="text" name="Country" placeholder="Country" required>
-
-<input type="text" name="WhatsApp" placeholder="WhatsApp Number">
+<input type="text" name="Country" placeholder="Country">
 
 <select name="Product">
 
 <option>Select Product</option>
 
-<option>Moringa Leaf Powder</option>
-<option>Amla Powder</option>
-<option>Ashwagandha Powder</option>
-<option>Shatavari Powder</option>
-<option>Stevia Powder</option>
-<option>Shilajit Powder</option>
+<option>Moringa</option>
+<option>Amla</option>
+<option>Ashwagandha</option>
+<option>Makhana</option>
+<option>Stevia</option>
+<option>Shilajit</option>
 
 </select>
 
-<textarea name="Message" placeholder="Quantity, Packaging, Destination Port, etc."></textarea>
+<textarea name="Message" placeholder="Requirement details"></textarea>
 
-<button type="submit">Send Export Inquiry</button>
+<button type="submit">Send Inquiry</button>
 
 </form>
 
@@ -387,11 +377,16 @@ WhatsApp: +91-XXXXXXXXXX
 
 <footer>
 
-© 2026 VibeNext Global LLP  
-Email: info@vibenextglobal.com  
-WhatsApp: +91-XXXXXXXXXX  
+© VibeNext Global LLP  
+info@vibenextglobal.com  
 
 </footer>
+
+<a href="https://wa.me/919250324200" class="whatsapp">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+</a>
 
 </body>
 
