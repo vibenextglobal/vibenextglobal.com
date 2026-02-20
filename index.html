@@ -1,220 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>VibeNext Global LLP | Premium Herbal Exporter</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>VibeNext Global LLP | Exporters of Herbal & Agricultural Products</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
 }
 
-html{
-scroll-behavior:smooth;
+header {
+background-color: #0a3d62;
+color: white;
+padding: 20px;
+text-align: center;
 }
 
-body{
-background:#f4f7f5;
+nav {
+background-color: #145da0;
+padding: 10px;
+text-align: center;
 }
 
-/* HEADER */
-
-header{
-position:fixed;
-top:0;
-width:100%;
-background:white;
-padding:20px 60px;
-display:flex;
-justify-content:flex-end;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-z-index:1000;
+nav a {
+color: white;
+margin: 15px;
+text-decoration: none;
+font-weight: bold;
 }
 
-header a{
-margin-left:35px;
-text-decoration:none;
-color:#1b5e20;
-font-weight:600;
+nav a:hover {
+color: yellow;
 }
 
-header a:hover{
-color:#4CAF50;
+.section {
+padding: 40px;
+background: white;
+margin: 20px;
+border-radius: 8px;
 }
 
-/* HERO */
-
-.hero{
-height:100vh;
-background:url('images/herbal-bg.jpg') center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+.product {
+margin-bottom: 40px;
+padding: 20px;
+border: 1px solid #ddd;
+border-radius: 8px;
 }
 
-.hero-box{
-background:rgba(0,0,0,0.55);
-padding:50px;
-border-radius:15px;
-color:white;
-animation:fadeIn 2s;
+.product img {
+width: 300px;
+height: 200px;
+object-fit: cover;
+border-radius: 5px;
 }
 
-.hero h1{
-font-size:52px;
+footer {
+background-color: #0a3d62;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 20px;
 }
 
-.hero p{
-font-size:20px;
-margin-top:10px;
+button {
+background-color: #145da0;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
 
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:14px 35px;
-background:linear-gradient(45deg,#4CAF50,#2e7d32);
-color:white;
-border-radius:30px;
-text-decoration:none;
+button:hover {
+background-color: green;
 }
 
-.btn:hover{
-transform:scale(1.05);
-}
-
-/* SECTION */
-
-.section{
-padding:90px 60px;
-text-align:center;
-}
-
-.section h2{
-font-size:38px;
-margin-bottom:40px;
-color:#1b5e20;
-}
-
-/* PRODUCTS */
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:35px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:0.3s;
-text-align:left;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:15px;
-}
-
-.card h3{
-color:#1b5e20;
-margin-bottom:10px;
-}
-
-.card ul{
-padding-left:20px;
-}
-
-/* BADGES */
-
-.badges{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:25px;
-}
-
-.badge{
-background:white;
-padding:20px 30px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
-
-/* FORM */
-
-form{
-max-width:600px;
-margin:auto;
-}
-
-input, textarea{
-width:100%;
-padding:14px;
-margin-top:12px;
-border-radius:8px;
-border:1px solid #ccc;
-}
-
-button{
-margin-top:20px;
-width:100%;
-padding:14px;
-background:linear-gradient(45deg,#4CAF50,#2e7d32);
-color:white;
-border:none;
-border-radius:30px;
-cursor:pointer;
-}
-
-/* FOOTER */
-
-footer{
-background:#1b5e20;
-color:white;
-padding:25px;
-text-align:center;
-}
-
-/* WHATSAPP BUTTON */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 18px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-/* ANIMATION */
-
-@keyframes fadeIn{
-from{opacity:0;}
-to{opacity:1;}
+form input, form textarea {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border-radius: 5px;
+border: 1px solid #ccc;
 }
 
 </style>
@@ -224,145 +95,168 @@ to{opacity:1;}
 <body>
 
 <header>
-
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
-
+<h1>VibeNext Global LLP</h1>
+<p>Trusted Exporter of Premium Herbal & Agricultural Products from India</p>
 </header>
 
+<nav>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#enquiry">Enquiry</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<section class="hero" id="home">
+<section id="about" class="section">
+<h2>About Us</h2>
 
-<div class="hero-box">
+<p>
+VibeNext Global LLP is a professional export company based in India specializing in high-quality herbal, agricultural, and natural products.
+</p>
 
-<h1>VibeNext Global LLP</h1>
+<p>
+We ensure international quality standards, proper packaging, and timely delivery worldwide.
+</p>
 
-<p>Premium Herbal Exporter from India</p>
-
-<p>Email: info@vibenextglobal.com</p>
-
-<a href="catalogue.pdf" class="btn" download>
-Download Product Catalogue
-</a>
-
-</div>
+<p>
+Our mission is to deliver purity, quality, and trust globally.
+</p>
 
 </section>
 
+<section id="products" class="section">
 
-<section class="section" id="products">
+<h2>Our Products</h2>
 
-<h2>Our Herbal Products</h2>
+<!-- AONLA -->
+<div class="product">
+<h3>Amla (Indian Gooseberry)</h3>
 
-<div class="products">
+<img src="images/amla.jpg">
 
-<div class="card">
-<img src="images/moringa.jpg">
+<ul>
+<li>Richest natural source of Vitamin C</li>
+<li>Boosts immunity and overall health</li>
+<li>Used in juice, powder, capsules</li>
+<li>Supports hair, skin and digestion</li>
+<li>Available in bulk export packaging</li>
+</ul>
+</div>
+
+<!-- MORINGA -->
+<div class="product">
 <h3>Moringa Powder</h3>
+
+<img src="images/moringa.jpg">
+
 <ul>
-<li>Boosts immunity</li>
-<li>Improves energy</li>
-<li>Supports heart health</li>
-<li>Rich in antioxidants</li>
-<li>Supports blood sugar control</li>
+<li>Superfood with 90+ nutrients</li>
+<li>High protein and antioxidants</li>
+<li>Supports energy and immunity</li>
+<li>100% natural and chemical free</li>
+<li>Export quality hygienic packaging</li>
 </ul>
 </div>
 
-<div class="card">
-<img src="images/aonla.jpg">
-<h3>Aonla Powder</h3>
+<!-- STEVIA -->
+<div class="product">
+<h3>Stevia Leaves & Powder</h3>
+
+<img src="images/stevia.jpg">
+
 <ul>
-<li>High Vitamin C</li>
-<li>Boosts immunity</li>
-<li>Improves digestion</li>
-<li>Improves skin health</li>
-<li>Powerful antioxidant</li>
+<li>Natural zero calorie sweetener</li>
+<li>Best alternative to sugar</li>
+<li>Ideal for diabetic friendly products</li>
+<li>Used in food, beverages and pharma</li>
+<li>Premium export quality available</li>
 </ul>
 </div>
 
-<div class="card">
-<img src="images/ashwagandha.jpg">
-<h3>Ashwagandha</h3>
+<!-- JAGGERY -->
+<div class="product">
+<h3>Jaggery (Gur)</h3>
+
+<img src="images/jaggery.jpg">
+
 <ul>
-<li>Reduces stress</li>
-<li>Improves brain function</li>
-<li>Boosts stamina</li>
-<li>Improves immunity</li>
-<li>Improves strength</li>
+<li>100% natural and chemical free</li>
+<li>Rich in minerals and iron</li>
+<li>Healthy alternative to refined sugar</li>
+<li>Available in cube, powder and block form</li>
+<li>Export grade packaging</li>
 </ul>
 </div>
 
-<div class="card">
-<img src="images/shilajit.jpg">
-<h3>Shilajit</h3>
-<ul>
-<li>Boosts testosterone</li>
-<li>Improves energy</li>
-<li>Improves stamina</li>
-<li>Anti aging</li>
-<li>Supports brain health</li>
-</ul>
-</div>
+<!-- TURMERIC -->
+<div class="product">
+<h3>Turmeric</h3>
 
+<img src="images/turmeric.jpg">
+
+<ul>
+<li>High curcumin content</li>
+<li>Strong anti-inflammatory properties</li>
+<li>Used in food, pharma and cosmetics</li>
+<li>Premium quality Indian turmeric</li>
+<li>Bulk export available worldwide</li>
+</ul>
 </div>
 
 </section>
 
+<section id="enquiry" class="section">
 
-<section class="section" id="certifications">
+<h2>Business Enquiry</h2>
 
-<h2>Certifications</h2>
+<p>
+International buyers, importers, distributors and wholesalers are welcome.
+</p>
 
-<div class="badges">
+<form action="mailto:info@vibenextglobal.com" method="post" enctype="text/plain">
 
-<div class="badge">IEC Registered</div>
-<div class="badge">FSSAI Certified</div>
-<div class="badge">APEDA Registered</div>
-<div class="badge">ISO Suppliers</div>
+<label>Name:</label>
+<input type="text" name="name" required>
 
-</div>
+<label>Email:</label>
+<input type="email" name="email" required>
 
-</section>
+<label>Country:</label>
+<input type="text" name="country" required>
 
+<label>Product Interested In:</label>
+<input type="text" name="product" required>
 
-<section class="section" id="contact">
+<label>Quantity Required:</label>
+<input type="text" name="quantity">
 
-<h2>Send Inquiry</h2>
+<label>Message:</label>
+<textarea name="message" rows="5"></textarea>
 
-<form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
-
-<input type="hidden" name="_captcha" value="false">
-
-<input type="hidden" name="_autoresponse"
-value="Thank you for contacting VibeNext Global LLP. We will contact you soon.">
-
-<input type="text" name="Name" placeholder="Your Name / Company Name" required>
-
-<input type="email" name="Email" placeholder="Your Email" required>
-
-<textarea name="Message" placeholder="Your requirement"></textarea>
-
-<button type="submit">Send Inquiry</button>
+<button type="submit">Send Enquiry</button>
 
 </form>
 
 </section>
 
+<section id="contact" class="section">
+
+<h2>Contact Us</h2>
+
+<p>
+Company: VibeNext Global LLP<br>
+Email: info@vibenextglobal.com<br>
+Location: India<br>
+</p>
+
+</section>
 
 <footer>
 
-© 2026 VibeNext Global LLP  
-info@vibenextglobal.com  
+<p>
+© 2026 VibeNext Global LLP | All Rights Reserved
+</p>
 
 </footer>
-
-
-<a href="https://wa.me/919250324200?text=Hello%20VibeNext%20Global%20LLP,%20I%20am%20interested%20in%20your%20products."
-class="whatsapp">
-WhatsApp
-</a>
 
 </body>
 </html>
