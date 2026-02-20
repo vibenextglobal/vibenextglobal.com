@@ -1,133 +1,272 @@
-<!-- PROFESSIONAL EXPORT INQUIRY SECTION -->
-<section class="inquiry" id="inquiry">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VibeNext Global LLP | Herbal Exporter from India</title>
 
 <style>
-.inquiry {
-    padding: 60px 20px;
-    background: #f4f8f6;
-    text-align: center;
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f6f8;
 }
 
-.inquiry h2 {
-    font-size: 32px;
-    color: #0a5c36;
-    margin-bottom: 10px;
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.inquiry p {
-    color: #555;
-    margin-bottom: 30px;
+.logo{
+height:60px;
 }
 
-.inquiry-form {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+.nav-links a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
 }
 
-.inquiry-form input,
-.inquiry-form textarea {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 15px;
+/* HERO */
+
+.hero{
+background:url('images/herbal-bg.jpg') center/cover no-repeat;
+color:white;
+text-align:center;
+padding:120px 20px;
+background-color:#0a5c2f;
 }
 
-.inquiry-form input:focus,
-.inquiry-form textarea:focus {
-    border-color: #16a34a;
-    outline: none;
+.hero h1{
+font-size:48px;
+margin:10px 0;
 }
 
-.inquiry-form button {
-    width: 100%;
-    padding: 15px;
-    background: linear-gradient(135deg, #16a34a, #15803d);
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
+.hero p{
+font-size:20px;
 }
 
-.inquiry-form button:hover {
-    background: linear-gradient(135deg, #15803d, #166534);
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:5px;
 }
 
-.success-message {
-    display: none;
-    color: green;
-    margin-top: 15px;
-    font-weight: bold;
+/* PRODUCTS */
+
+.products{
+padding:50px;
+text-align:center;
 }
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.product-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+width:100%;
+border-radius:10px;
+}
+
+/* INQUIRY */
+
+.inquiry{
+padding:50px;
+background:white;
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:auto;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:12px;
+width:100%;
+background:#0a5c2f;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0a5c2f;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+}
+
 </style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<img src="images/logo.png" class="logo">
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#inquiry">Inquiry</a>
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="images/logo.png" style="height:100px;">
+
+<h1>VibeNext Global LLP</h1>
+
+<p>Trusted Exporter of Herbal & Nutraceutical Products from India</p>
+
+<p>Email: priyankavibenextglobal@gmail.com</p>
+
+<a href="#products" class="btn">View Products</a>
+
+<a href="#inquiry" class="btn">Send Inquiry</a>
+
+</div>
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+<h2>Our Export Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+<img src="images/moringa.jpg">
+<h3>Moringa Powder</h3>
+<p>Premium export quality moringa powder.</p>
+</div>
+
+<div class="product-card">
+<img src="images/aonla.jpg">
+<h3>Aonla Powder</h3>
+<p>Vitamin C rich herbal powder.</p>
+</div>
+
+<div class="product-card">
+<img src="images/stevia.jpg">
+<h3>Stevia</h3>
+<p>Natural herbal sweetener.</p>
+</div>
+
+<div class="product-card">
+<img src="images/turmeric.jpg">
+<h3>Turmeric</h3>
+<p>High curcumin export quality turmeric.</p>
+</div>
+
+<div class="product-card">
+<img src="images/shilajit.jpg">
+<h3>Shilajit</h3>
+<p>Pure Himalayan Shilajit.</p>
+</div>
+
+<div class="product-card">
+<img src="images/jaggery.jpg">
+<h3>Jaggery</h3>
+<p>Natural export quality jaggery.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- INQUIRY FORM -->
+
+<section class="inquiry" id="inquiry">
 
 <h2>Send Export Inquiry</h2>
 
-<p>Fill this form and our export team will contact you within 24 hours.</p>
+<form action="https://formsubmit.co/priyankavibenextglobal@gmail.com" method="POST">
 
-<form 
-action="https://formsubmit.co/priyankavibenextglobal@gmail.com" 
-method="POST" 
-class="inquiry-form"
-onsubmit="showSuccessMessage()"
->
-
-<!-- FormSubmit Settings -->
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Export Inquiry - VibeNext Global LLP">
-<input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://vibenextglobal.com">
 
-<!-- User Fields -->
+<input type="hidden" name="_subject" value="New Export Inquiry">
 
-<input type="text" 
-name="Company Name" 
-placeholder="Your Name / Company Name" 
-required>
+<input type="text" name="Name" placeholder="Your Name / Company Name" required>
 
-<input type="email" 
-name="Email" 
-placeholder="Your Email Address" 
-required>
+<input type="email" name="Email" placeholder="Your Email Address" required>
 
-<input type="text" 
-name="Country" 
-placeholder="Country" 
-required>
+<input type="text" name="Country" placeholder="Country" required>
 
-<input type="text" 
-name="Phone" 
-placeholder="Phone / WhatsApp Number">
+<input type="text" name="Phone" placeholder="Phone / WhatsApp Number">
 
-<input type="text" 
-name="Product" 
-placeholder="Product Name (Example: Moringa Powder)">
+<input type="text" name="Product" placeholder="Product Name">
 
-<textarea 
-name="Requirement" 
-placeholder="Quantity, Packaging, Destination Port, etc." 
-rows="4"
-required></textarea>
+<textarea name="Requirement" placeholder="Your Requirement Details" required></textarea>
 
 <button type="submit">Send Inquiry</button>
 
-<div class="success-message" id="successMsg">
-Inquiry sent successfully! We will contact you soon.
-</div>
-
 </form>
 
-<script>
-function showSuccessMessage() {
-    document.getElementById("successMsg").style.display = "block";
-}
-</script>
-
 </section>
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 VibeNext Global LLP | Herbal Exporter from India
+
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/919876543210" class="whatsapp">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="60">
+</a>
+
+</body>
+</html>
