@@ -19,8 +19,6 @@ background:#F4F8F6;
 color:#1A1A1A;
 }
 
-/* HEADER */
-
 header{
 background:white;
 padding:20px 60px;
@@ -47,8 +45,6 @@ color:#333;
 nav a:hover{
 color:#10B981;
 }
-
-/* HERO */
 
 .hero{
 background:url('images/herbal-bg.jpg') center/cover;
@@ -85,25 +81,6 @@ font-size:16px;
 text-decoration:none;
 }
 
-/* TRUST BADGES */
-
-.badges{
-text-align:center;
-padding:40px;
-}
-
-.badge{
-display:inline-block;
-background:white;
-padding:12px 20px;
-margin:10px;
-border-radius:6px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
-font-weight:600;
-}
-
-/* PRODUCTS */
-
 section{
 padding:70px 60px;
 }
@@ -114,6 +91,30 @@ font-size:34px;
 color:#0B3D2E;
 margin-bottom:40px;
 font-weight:700;
+}
+
+.about{
+background:white;
+border-radius:10px;
+padding:40px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+line-height:1.7;
+font-size:17px;
+}
+
+.countries{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.country{
+background:white;
+padding:12px 20px;
+border-radius:6px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+font-weight:600;
 }
 
 .products{
@@ -138,7 +139,21 @@ border-radius:8px;
 color:#0B3D2E;
 }
 
-/* FORM */
+.quality{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+line-height:1.8;
+}
+
+.packaging{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+line-height:1.8;
+}
 
 form{
 max-width:600px;
@@ -167,23 +182,12 @@ border-radius:6px;
 font-size:16px;
 }
 
-/* BROCHURE */
-
-.brochure{
-text-align:center;
-padding:40px;
-}
-
-/* FOOTER */
-
 footer{
 background:#0B3D2E;
 color:white;
 text-align:center;
 padding:20px;
 }
-
-/* WHATSAPP FLOAT */
 
 .whatsapp{
 position:fixed;
@@ -207,11 +211,13 @@ width:60px;
 <div class="logo">VibeNext Global LLP</div>
 
 <nav>
-
 <a href="#">Home</a>
+<a href="#about">About</a>
 <a href="#products">Products</a>
+<a href="#quality">Quality</a>
+<a href="#packaging">Packaging</a>
+<a href="#countries">Export Countries</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 </header>
@@ -222,7 +228,7 @@ width:60px;
 
 <h1>Premium Herbal Exporter</h1>
 
-<p>Trusted supplier of high-quality herbal products worldwide</p>
+<p>Delivering Naturally Grown Herbal Products Worldwide</p>
 
 <a href="#products" class="btn">Explore Products</a>
 
@@ -230,15 +236,70 @@ width:60px;
 
 </div>
 
-<div class="badges">
+<section id="about">
 
-<div class="badge">IEC Registered Exporter</div>
-<div class="badge">FSSAI Certified</div>
-<div class="badge">APEDA Registered</div>
-<div class="badge">ISO Compliant Supplier</div>
-<div class="badge">Global Export Quality</div>
+<div class="title">About VibeNext Global LLP</div>
+
+<div class="about">
+
+VibeNext Global LLP is committed to adding value to everybody’s health by providing premium herbal products grown naturally and processed under strict hygienic standards. We work closely with trusted growers and ensure authenticity, purity, and consistency in every shipment. Our mission is to deliver reliable herbal solutions to global partners while maintaining transparency, quality assurance, and long-term business relationships.
 
 </div>
+
+</section>
+
+<section id="quality">
+
+<div class="title">Quality Assurance</div>
+
+<div class="quality">
+
+• Carefully sourced from trusted growers  
+• Hygienically processed and handled  
+• Strict quality inspection before shipment  
+• Maintains natural composition and purity  
+• Suitable for global nutraceutical and food industries  
+
+</div>
+
+</section>
+
+<section id="packaging">
+
+<div class="title">Packaging & Export Details</div>
+
+<div class="packaging">
+
+• Export-grade moisture-resistant packaging  
+• Available in bulk and custom packaging options  
+• Proper labeling and documentation provided  
+• Secure packaging to ensure safe international transit  
+• Flexible packaging based on buyer requirements  
+
+</div>
+
+</section>
+
+<section id="countries">
+
+<div class="title">Export Countries Served</div>
+
+<div class="countries">
+
+<div class="country">United States</div>
+<div class="country">United Kingdom</div>
+<div class="country">Germany</div>
+<div class="country">France</div>
+<div class="country">United Arab Emirates</div>
+<div class="country">Saudi Arabia</div>
+<div class="country">Canada</div>
+<div class="country">Australia</div>
+<div class="country">Singapore</div>
+<div class="country">Netherlands</div>
+
+</div>
+
+</section>
 
 <section id="products">
 
@@ -250,11 +311,11 @@ width:60px;
 <img src="images/moringa.jpg">
 <h3>Moringa Leaf</h3>
 <ul>
-<li>High global demand</li>
-<li>Rich nutritional profile</li>
-<li>Supports immunity</li>
+<li>Rich natural nutrient profile</li>
+<li>Carefully sourced and processed</li>
 <li>Premium export quality</li>
-<li>Widely used nutraceutical</li>
+<li>Maintains natural color and aroma</li>
+<li>Suitable for nutraceutical use</li>
 </ul>
 </div>
 
@@ -262,23 +323,11 @@ width:60px;
 <img src="images/aonla.jpg">
 <h3>Amla Fruit</h3>
 <ul>
-<li>Rich Vitamin C source</li>
-<li>Boosts immunity</li>
-<li>Strong global demand</li>
-<li>Supports digestive health</li>
+<li>Excellent natural Vitamin C source</li>
+<li>Carefully harvested and processed</li>
+<li>Maintains natural nutritional value</li>
 <li>Premium export quality</li>
-</ul>
-</div>
-
-<div class="card">
-<img src="images/ashwagandha.jpg">
-<h3>Ashwagandha Root</h3>
-<ul>
-<li>Supports stress reduction</li>
-<li>Global herbal demand</li>
-<li>Improves vitality</li>
-<li>Premium export quality</li>
-<li>Widely used adaptogen</li>
+<li>Suitable for global markets</li>
 </ul>
 </div>
 
@@ -286,11 +335,11 @@ width:60px;
 <img src="images/makhana.jpg">
 <h3>Makhana</h3>
 <ul>
-<li>Premium superfood export</li>
-<li>High global demand</li>
-<li>Healthy snack market</li>
-<li>Rich nutrient profile</li>
-<li>Excellent export potential</li>
+<li>Premium graded lotus seeds</li>
+<li>Carefully selected for export</li>
+<li>Natural purity maintained</li>
+<li>Processed hygienically</li>
+<li>Suitable for food industry</li>
 </ul>
 </div>
 
@@ -298,11 +347,11 @@ width:60px;
 <img src="images/stevia.jpg">
 <h3>Stevia Leaf</h3>
 <ul>
-<li>Natural sweetener</li>
-<li>Global food industry use</li>
-<li>High export demand</li>
-<li>Premium quality available</li>
-<li>Diabetic friendly product</li>
+<li>Natural plant-based sweetener</li>
+<li>No artificial additives</li>
+<li>Carefully dried and processed</li>
+<li>Premium export quality</li>
+<li>Suitable for food applications</li>
 </ul>
 </div>
 
@@ -310,11 +359,11 @@ width:60px;
 <img src="images/shilajit.jpg">
 <h3>Shilajit Resin</h3>
 <ul>
-<li>Premium nutraceutical product</li>
-<li>High global demand</li>
-<li>Supports vitality</li>
-<li>Export quality material</li>
-<li>Widely used supplement</li>
+<li>Carefully purified natural resin</li>
+<li>Maintains natural composition</li>
+<li>Premium quality material</li>
+<li>Processed hygienically</li>
+<li>Suitable for nutraceutical industry</li>
 </ul>
 </div>
 
@@ -322,23 +371,17 @@ width:60px;
 <img src="images/jaggery.jpg">
 <h3>Jaggery</h3>
 <ul>
-<li>Natural sweetener export product</li>
-<li>High global demand</li>
-<li>Rich mineral content</li>
-<li>Organic product market use</li>
-<li>Premium export quality available</li>
+<li>Natural sugarcane product</li>
+<li>No chemical refining</li>
+<li>Traditional processing method</li>
+<li>Maintains natural taste</li>
+<li>Premium export quality</li>
 </ul>
 </div>
 
 </div>
 
 </section>
-
-<div class="brochure">
-
-<a href="brochure.pdf" class="btn">Download Company Brochure</a>
-
-</div>
 
 <section id="contact">
 
@@ -355,16 +398,13 @@ width:60px;
 <input type="text" name="Country" placeholder="Country">
 
 <select name="Product">
-
 <option>Select Product</option>
 <option>Moringa</option>
 <option>Amla</option>
-<option>Ashwagandha</option>
 <option>Makhana</option>
 <option>Stevia</option>
 <option>Shilajit</option>
 <option>Jaggery</option>
-
 </select>
 
 <textarea name="Message" placeholder="Requirement details"></textarea>
@@ -383,11 +423,8 @@ info@vibenextglobal.com
 </footer>
 
 <a href="https://wa.me/919250324200" class="whatsapp">
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-
 </a>
 
 </body>
-
 </html>
