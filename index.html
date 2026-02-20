@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,157 +12,133 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#f4f6f5;
+background:#f5f5f5;
 }
-
-/* HEADER */
 
 header{
 display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
+justify-content:flex-end;
+padding:20px 60px;
 background:white;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.logo{
-height:60px;
-}
-
-nav a{
-margin-left:20px;
+header a{
+margin-left:30px;
 text-decoration:none;
-color:#2e7d32;
 font-weight:bold;
+color:#2e7d32;
 }
 
-/* HERO SECTION */
+header a:hover{
+color:#4CAF50;
+}
 
 .hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,80,0,0.6), rgba(0,80,0,0.6)),
-url('images/herbal-bg.jpg');
-background-size:cover;
-background-position:center;
+height:100vh;
+background:url('images/herbal-bg.jpg') center/cover no-repeat;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
-color:white;
 text-align:center;
 }
 
-.hero-logo{
-height:120px;
-margin-bottom:20px;
+.hero-content{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:10px;
+color:white;
 }
 
 .hero h1{
 font-size:48px;
-margin:10px 0;
+margin-bottom:10px;
 }
 
 .hero p{
 font-size:20px;
+margin-bottom:20px;
 }
 
-.hero button{
+.btn{
+display:inline-block;
 padding:12px 25px;
-margin:10px;
-font-size:16px;
-border:none;
 background:#4CAF50;
 color:white;
-cursor:pointer;
+text-decoration:none;
 border-radius:5px;
+margin:10px;
 }
 
-.hero button:hover{
+.btn:hover{
 background:#2e7d32;
 }
 
-/* PRODUCTS */
-
 .products{
-padding:60px 20px;
+padding:60px;
 text-align:center;
-}
-
-.products h2{
-margin-bottom:30px;
+background:white;
 }
 
 .product-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-gap:20px;
-padding:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
 }
 
 .product-card{
-background:white;
+background:#fff;
 padding:20px;
 border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .product-card img{
 width:100%;
 height:200px;
 object-fit:cover;
-border-radius:8px;
+border-radius:10px;
 }
-
-.product-card h3{
-color:#2e7d32;
-}
-
-/* INQUIRY FORM */
 
 .inquiry{
-background:white;
-padding:60px 20px;
+padding:60px;
+background:#f9f9f9;
 text-align:center;
 }
 
-.inquiry form{
+form{
 max-width:500px;
 margin:auto;
 }
 
-.inquiry input,
-.inquiry textarea{
+input, textarea{
 width:100%;
 padding:12px;
 margin:10px 0;
+border-radius:5px;
 border:1px solid #ccc;
-border-radius:5px;
 }
 
-.inquiry button{
-width:100%;
-padding:15px;
-background:#2e7d32;
+button{
+background:#4CAF50;
 color:white;
+padding:12px;
 border:none;
-font-size:18px;
-cursor:pointer;
+width:100%;
+font-size:16px;
 border-radius:5px;
 }
 
-.inquiry button:hover{
-background:#1b5e20;
+button:hover{
+background:#2e7d32;
 }
-
-/* FOOTER */
 
 footer{
 background:#2e7d32;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
 }
 
 </style>
@@ -172,19 +149,18 @@ padding:15px;
 
 <header>
 
-<img src="images/logo.png" class="logo">
+<a href="#home">Home</a>
 
-<nav>
-<a href="#">Home</a>
 <a href="#products">Products</a>
+
 <a href="#inquiry">Contact</a>
-</nav>
 
 </header>
 
-<section class="hero">
 
-<img src="images/logo.png" class="hero-logo">
+<section class="hero" id="home">
+
+<div class="hero-content">
 
 <h1>VibeNext Global LLP</h1>
 
@@ -192,11 +168,14 @@ padding:15px;
 
 <p>Email: info@vibenextglobal.com</p>
 
-<button onclick="location.href='#products'">View Products</button>
+<a href="#products" class="btn">View Products</a>
 
-<button onclick="location.href='#inquiry'">Send Inquiry</button>
+<a href="#inquiry" class="btn">Send Inquiry</a>
+
+</div>
 
 </section>
+
 
 <section class="products" id="products">
 
@@ -204,11 +183,13 @@ padding:15px;
 
 <div class="product-grid">
 
+
 <div class="product-card">
 <img src="images/moringa.jpg">
 <h3>Moringa Powder</h3>
 <p>Premium export quality moringa powder.</p>
 </div>
+
 
 <div class="product-card">
 <img src="images/aonla.jpg">
@@ -216,17 +197,27 @@ padding:15px;
 <p>Vitamin C rich herbal powder.</p>
 </div>
 
+
 <div class="product-card">
 <img src="images/ashwagandha.jpg">
 <h3>Ashwagandha</h3>
-<p>High quality herbal supplement.</p>
+<p>High quality ashwagandha powder.</p>
 </div>
+
 
 <div class="product-card">
 <img src="images/shilajit.jpg">
 <h3>Shilajit</h3>
-<p>Purified Himalayan shilajit.</p>
+<p>Pure Himalayan shilajit.</p>
 </div>
+
+
+<div class="product-card">
+<img src="images/stevia.jpg">
+<h3>Stevia</h3>
+<p>Natural herbal sweetener.</p>
+</div>
+
 
 <div class="product-card">
 <img src="images/turmeric.jpg">
@@ -234,15 +225,18 @@ padding:15px;
 <p>High curcumin turmeric powder.</p>
 </div>
 
+
 <div class="product-card">
 <img src="images/jaggery.jpg">
 <h3>Jaggery</h3>
 <p>Natural chemical-free jaggery.</p>
 </div>
 
+
 </div>
 
 </section>
+
 
 <section class="inquiry" id="inquiry">
 
@@ -250,11 +244,9 @@ padding:15px;
 
 <p>Fill this form and our export team will contact you within 24 hours.</p>
 
-<form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
+<form action="https://formsubmit.co/priyankavibenextglobal@gmail.com" method="POST">
 
 <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Export Inquiry - VibeNext Global">
-<input type="hidden" name="_template" value="table">
 
 <input type="text" name="Name" placeholder="Your Name / Company Name" required>
 
@@ -264,9 +256,9 @@ padding:15px;
 
 <input type="text" name="Phone" placeholder="Phone / WhatsApp Number">
 
-<input type="text" name="Product" placeholder="Product Name">
+<input type="text" name="Product" placeholder="Product Name (Example: Moringa Powder)">
 
-<textarea name="Requirement" placeholder="Quantity, Packaging, Destination Port, etc." required></textarea>
+<textarea name="Message" placeholder="Quantity, Packaging, Destination Port, etc." rows="5"></textarea>
 
 <button type="submit">Send Export Inquiry</button>
 
@@ -274,12 +266,13 @@ padding:15px;
 
 </section>
 
+
 <footer>
 
 © 2026 VibeNext Global LLP | Herbal Exporter from India
 
 </footer>
 
-</body>
 
+</body>
 </html>
