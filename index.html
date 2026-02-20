@@ -45,7 +45,6 @@ margin-left:35px;
 text-decoration:none;
 color:#1b5e20;
 font-weight:600;
-transition:0.3s;
 }
 
 header a:hover{
@@ -82,17 +81,16 @@ margin-top:10px;
 
 .btn{
 display:inline-block;
-margin-top:25px;
+margin-top:20px;
 padding:14px 35px;
 background:linear-gradient(45deg,#4CAF50,#2e7d32);
 color:white;
 border-radius:30px;
 text-decoration:none;
-transition:0.4s;
 }
 
 .btn:hover{
-transform:translateY(-3px);
+transform:scale(1.05);
 }
 
 /* SECTION */
@@ -104,11 +102,11 @@ text-align:center;
 
 .section h2{
 font-size:38px;
-margin-bottom:50px;
+margin-bottom:40px;
 color:#1b5e20;
 }
 
-/* PRODUCT CARDS */
+/* PRODUCTS */
 
 .products{
 display:grid;
@@ -121,7 +119,7 @@ background:white;
 padding:25px;
 border-radius:15px;
 box-shadow:0 10px 30px rgba(0,0,0,0.08);
-transition:0.4s;
+transition:0.3s;
 text-align:left;
 }
 
@@ -146,11 +144,6 @@ margin-bottom:10px;
 padding-left:20px;
 }
 
-.card li{
-margin-bottom:6px;
-font-size:14px;
-}
-
 /* BADGES */
 
 .badges{
@@ -165,7 +158,6 @@ background:white;
 padding:20px 30px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,0.08);
-font-weight:600;
 }
 
 /* FORM */
@@ -203,18 +195,19 @@ padding:25px;
 text-align:center;
 }
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 
 .whatsapp{
 position:fixed;
-bottom:25px;
-right:25px;
+bottom:20px;
+right:20px;
 background:#25D366;
 color:white;
-padding:18px;
-border-radius:50%;
-font-size:26px;
+padding:15px 18px;
+border-radius:50px;
+font-weight:bold;
 text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* ANIMATION */
@@ -239,6 +232,7 @@ to{opacity:1;}
 
 </header>
 
+
 <section class="hero" id="home">
 
 <div class="hero-box">
@@ -249,7 +243,9 @@ to{opacity:1;}
 
 <p>Email: info@vibenextglobal.com</p>
 
-<a href="#products" class="btn">Explore Products</a>
+<a href="catalogue.pdf" class="btn" download>
+Download Product Catalogue
+</a>
 
 </div>
 
@@ -258,79 +254,55 @@ to{opacity:1;}
 
 <section class="section" id="products">
 
-<h2>Our Premium Herbal Products</h2>
+<h2>Our Herbal Products</h2>
 
 <div class="products">
 
 <div class="card">
 <img src="images/moringa.jpg">
-<h3>Moringa Powder Benefits</h3>
+<h3>Moringa Powder</h3>
 <ul>
-<li>Boosts immunity naturally</li>
-<li>Improves energy and stamina</li>
-<li>Supports healthy blood sugar levels</li>
-<li>Rich in antioxidants</li>
+<li>Boosts immunity</li>
+<li>Improves energy</li>
 <li>Supports heart health</li>
+<li>Rich in antioxidants</li>
+<li>Supports blood sugar control</li>
 </ul>
 </div>
 
 <div class="card">
 <img src="images/aonla.jpg">
-<h3>Aonla Powder Benefits</h3>
+<h3>Aonla Powder</h3>
 <ul>
-<li>Rich source of Vitamin C</li>
-<li>Improves digestion</li>
+<li>High Vitamin C</li>
 <li>Boosts immunity</li>
-<li>Supports healthy skin and hair</li>
+<li>Improves digestion</li>
+<li>Improves skin health</li>
 <li>Powerful antioxidant</li>
 </ul>
 </div>
 
 <div class="card">
 <img src="images/ashwagandha.jpg">
-<h3>Ashwagandha Benefits</h3>
+<h3>Ashwagandha</h3>
 <ul>
-<li>Reduces stress and anxiety</li>
+<li>Reduces stress</li>
 <li>Improves brain function</li>
-<li>Boosts testosterone levels</li>
-<li>Improves muscle strength</li>
-<li>Supports immune system</li>
+<li>Boosts stamina</li>
+<li>Improves immunity</li>
+<li>Improves strength</li>
 </ul>
 </div>
 
 <div class="card">
 <img src="images/shilajit.jpg">
-<h3>Shilajit Benefits</h3>
+<h3>Shilajit</h3>
 <ul>
-<li>Boosts energy levels</li>
+<li>Boosts testosterone</li>
+<li>Improves energy</li>
 <li>Improves stamina</li>
+<li>Anti aging</li>
 <li>Supports brain health</li>
-<li>Improves testosterone</li>
-<li>Anti-aging properties</li>
-</ul>
-</div>
-
-<div class="card">
-<img src="images/turmeric.jpg">
-<h3>Turmeric Benefits</h3>
-<ul>
-<li>Powerful anti-inflammatory</li>
-<li>Boosts immunity</li>
-<li>Improves digestion</li>
-<li>Supports joint health</li>
-<li>Rich in antioxidants</li>
-</ul>
-</div>
-
-<div class="card">
-<img src="images/jaggery.jpg">
-<h3>Jaggery Benefits</h3>
-<ul>
-<li>Improves digestion</li>
-<li>Rich in iron</li>
-<li>Boosts immunity</li>
-<li>Natural detoxifier</li>
-<li>Provides instant energy</li>
 </ul>
 </div>
 
@@ -345,7 +317,7 @@ to{opacity:1;}
 
 <div class="badges">
 
-<div class="badge">IEC Registered Exporter</div>
+<div class="badge">IEC Registered</div>
 <div class="badge">FSSAI Certified</div>
 <div class="badge">APEDA Registered</div>
 <div class="badge">ISO Suppliers</div>
@@ -357,21 +329,18 @@ to{opacity:1;}
 
 <section class="section" id="contact">
 
-<h2>Send Export Inquiry</h2>
+<h2>Send Inquiry</h2>
 
 <form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
 
 <input type="hidden" name="_captcha" value="false">
 
-<input type="hidden" name="_autoresponse" value="Thank you for contacting VibeNext Global LLP. Our export team will contact you soon.">
+<input type="hidden" name="_autoresponse"
+value="Thank you for contacting VibeNext Global LLP. We will contact you soon.">
 
 <input type="text" name="Name" placeholder="Your Name / Company Name" required>
 
-<input type="email" name="Email" placeholder="Your Email Address" required>
-
-<input type="text" name="Country" placeholder="Country">
-
-<input type="text" name="Phone" placeholder="WhatsApp Number">
+<input type="email" name="Email" placeholder="Your Email" required>
 
 <textarea name="Message" placeholder="Your requirement"></textarea>
 
@@ -385,13 +354,14 @@ to{opacity:1;}
 <footer>
 
 © 2026 VibeNext Global LLP  
-Email: info@vibenextglobal.com  
+info@vibenextglobal.com  
 
 </footer>
 
 
-<a href="https://wa.me/919250324200?text=Hello%20VibeNext%20Global%20LLP,%20I%20am%20interested%20in%20your%20products." class="whatsapp">
-W
+<a href="https://wa.me/919250324200?text=Hello%20VibeNext%20Global%20LLP,%20I%20am%20interested%20in%20your%20products."
+class="whatsapp">
+WhatsApp
 </a>
 
 </body>
