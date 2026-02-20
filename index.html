@@ -6,111 +6,159 @@
 
 <title>VibeNext Global LLP | Herbal Exporter from India</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f5f7fa;
+font-family:Poppins, sans-serif;
+background:#f4f7f6;
+color:#333;
 }
 
+/* HEADER */
 header{
-background:#0b7a3d;
+background:linear-gradient(rgba(0,100,50,0.8), rgba(0,100,50,0.8)),
+url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716');
+background-size:cover;
+background-position:center;
 color:white;
-padding:20px;
+padding:80px 20px;
 text-align:center;
 }
 
-.container{
-padding:20px;
+header h1{
+font-size:40px;
+margin-bottom:10px;
 }
 
-h2{
-text-align:center;
+header p{
+font-size:18px;
 margin-bottom:20px;
-color:#0b7a3d;
 }
 
-.product-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+.btn{
+background:#00a651;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:5px;
+text-decoration:none;
+font-weight:600;
+margin:5px;
+display:inline-block;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#008c45;
+transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+padding:50px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+/* PRODUCTS GRID */
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:20px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.card h3{
+color:#006633;
+margin-bottom:10px;
+}
+
+/* ABOUT */
+.about{
+background:white;
+border-radius:10px;
+padding:30px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* WHY CHOOSE */
+.why{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.product{
-background:white;
-width:260px;
-padding:15px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-.product img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:6px;
-}
-
-.product h3{
-margin:10px 0 5px;
-color:#0b7a3d;
-}
-
-.product p{
-font-size:14px;
-}
-
-.why{
+.why-box{
 background:white;
 padding:20px;
-margin-top:30px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
-.form-container{
+/* FORM */
+form{
 background:white;
-padding:20px;
-margin-top:30px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
 input, textarea{
 width:100%;
-padding:10px;
-margin-top:10px;
+padding:12px;
+margin:10px 0;
 border-radius:5px;
 border:1px solid #ccc;
 }
 
-button{
-background:#0b7a3d;
-color:white;
-padding:12px;
-border:none;
-border-radius:5px;
-margin-top:10px;
-cursor:pointer;
-}
-
-button:hover{
-background:#095c2e;
-}
-
+/* FOOTER */
 footer{
-background:#0b7a3d;
+background:#006633;
 color:white;
 text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
 padding:15px;
-margin-top:30px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 </style>
-
 </head>
 
 <body>
@@ -123,112 +171,135 @@ margin-top:30px;
 
 <p>Email: info@vibenextglobal.com</p>
 
-<p>Exporting to UAE | Saudi Arabia | Europe | USA | Asia</p>
+<a href="#products" class="btn">View Products</a>
+
+<a href="#contact" class="btn">Send Inquiry</a>
 
 </header>
 
 
-<div class="container">
+<section class="about">
 
-<h2>Our Herbal Export Products</h2>
+<h2>About Our Company</h2>
 
-<div class="product-container">
+<p>
 
-<div class="product">
+VibeNext Global LLP is a trusted exporter of premium herbal and nutraceutical products from India.  
+
+We specialize in exporting moringa powder, aonla powder, ashwagandha, shilajit, jaggery, stevia, turmeric and other herbal products.
+
+</p>
+
+<p>
+
+We export to UAE, Saudi Arabia, Europe, USA and global markets.
+
+</p>
+
+</section>
+
+
+<section id="products">
+
+<h2>Our Export Products</h2>
+
+<div class="products">
+
+<div class="card">
 <img src="images/moringa.jpg">
 <h3>Moringa Powder</h3>
-<p>Premium quality moringa powder for global nutraceutical markets.</p>
+<p>Premium export quality moringa powder.</p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="images/aonla.jpg">
 <h3>Aonla Powder</h3>
-<p>Vitamin C rich herbal powder for food and supplement industries.</p>
+<p>Vitamin C rich herbal product.</p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="images/stevia.jpg">
 <h3>Stevia</h3>
-<p>Natural zero calorie sweetener for health conscious markets.</p>
+<p>Natural zero calorie sweetener.</p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="images/turmeric.jpg">
 <h3>Turmeric</h3>
-<p>High curcumin turmeric powder for medicinal and food use.</p>
+<p>High curcumin turmeric powder.</p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="images/ashwagandha.jpg">
 <h3>Ashwagandha</h3>
-<p>Premium herbal supplement powder for international buyers.</p>
+<p>Premium herbal supplement.</p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="images/shilajit.jpg">
 <h3>Shilajit</h3>
-<p>Purified Himalayan shilajit for wellness and nutraceutical use.</p>
+<p>Purified Himalayan shilajit.</p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="images/makhana.jpg">
-<h3>Makhana (Fox Nuts)</h3>
-<p>Premium export quality makhana for global food markets.</p>
+<h3>Makhana</h3>
+<p>Premium export quality fox nuts.</p>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="images/jaggery.jpg">
 <h3>Jaggery</h3>
-<p>Natural and chemical-free jaggery for international buyers.</p>
+<p>Natural chemical free jaggery.</p>
 </div>
 
 </div>
 
+</section>
+
+
+<section>
+
+<h2>Why Choose Us</h2>
 
 <div class="why">
 
-<h2>Why Choose VibeNext Global LLP</h2>
+<div class="why-box">Direct sourcing from farmers</div>
 
-<ul>
+<div class="why-box">Export quality packaging</div>
 
-<li>Direct sourcing from farmers</li>
+<div class="why-box">Competitive international pricing</div>
 
-<li>Export quality packaging</li>
+<div class="why-box">Timely worldwide delivery</div>
 
-<li>Competitive international pricing</li>
+<div class="why-box">Trusted exporter from India</div>
 
-<li>Timely delivery worldwide</li>
-
-<li>Trusted herbal exporter from India</li>
-
-<li>International quality standards maintained</li>
-
-</ul>
+<div class="why-box">Premium quality products</div>
 
 </div>
 
+</section>
 
-<div class="form-container">
+
+<section id="contact">
 
 <h2>Send Inquiry</h2>
 
-<form action="mailto:info@vibenextglobal.com" method="post">
+<form>
 
-<input type="text" placeholder="Your Name" required>
+<input placeholder="Your Name">
 
-<input type="email" placeholder="Your Email" required>
+<input placeholder="Your Email">
 
-<input type="text" placeholder="Country" required>
+<input placeholder="Country">
 
-<textarea placeholder="Your Requirement" required></textarea>
+<textarea placeholder="Your Requirement"></textarea>
 
-<button type="submit">Send Inquiry</button>
+<button class="btn">Send Inquiry</button>
 
 </form>
 
-</div>
-
-</div>
+</section>
 
 
 <footer>
@@ -236,6 +307,10 @@ margin-top:30px;
 © 2026 VibeNext Global LLP | Herbal Exporter from India
 
 </footer>
+
+
+<a class="whatsapp" href="https://wa.me/919000000000">💬</a>
+
 
 </body>
 </html>
