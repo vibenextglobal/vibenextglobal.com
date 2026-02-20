@@ -1,392 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibeNext Global LLP | Premium Herbal & Nutraceutical Exporter</title>
-    <meta name="description" content="Leading Indian exporter of Moringa, Ashwagandha, and premium herbal powders.">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #0B3D2E;
-            --accent: #10B981;
-            --light-bg: #F8FAFC;
-            --text-dark: #1E293B;
-            --white: #ffffff;
-            --transition: all 0.3s ease;
-        }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: var(--light-bg);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
+<title>VibeNext Global LLP | Premium Herbal Exporter from India</title>
 
-        /* --- Navigation --- */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            letter-spacing: -0.5px;
-        }
+<style>
 
-        nav a {
-            margin-left: 2rem;
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            transition: var(--transition);
-        }
+body{
+font-family:Inter;
+margin:0;
+background:#F4F8F6;
+color:#1A1A1A;
+}
 
-        nav a:hover {
-            color: var(--accent);
-        }
+header{
+background:white;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
 
-        /* --- Hero Section --- */
-        .hero {
-            position: relative;
-            min-height: 80vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1515514754512-bc7884370215?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;
-            color: var(--white);
-            text-align: center;
-            padding: 2rem;
-        }
+.logo{
+font-size:26px;
+font-weight:700;
+color:#0B3D2E;
+}
 
-        .hero-content {
-            background: rgba(11, 61, 46, 0.7);
-            backdrop-filter: blur(8px);
-            padding: 3.5rem;
-            border-radius: 20px;
-            max-width: 800px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
 
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 1rem;
-        }
+nav a:hover{
+color:#10B981;
+}
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
+.hero{
+background:url('images/herbal-bg.jpg') center/cover;
+padding:140px 20px;
+text-align:center;
+}
 
-        .btn {
-            background: var(--accent);
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 700;
-            display: inline-block;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
-        }
+.hero-box{
+background:rgba(11,61,46,0.9);
+padding:50px;
+display:inline-block;
+border-radius:12px;
+color:white;
+}
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
-            filter: brightness(1.1);
-        }
+.hero h1{
+font-family:Playfair Display;
+font-size:46px;
+margin-bottom:10px;
+}
 
-        /* --- Sections --- */
-        section {
-            padding: 5rem 10%;
-        }
+.hero p{
+font-size:18px;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
+.contact-info{
+margin-top:15px;
+font-size:16px;
+}
 
-        .section-title h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: var(--primary);
-        }
+.btn{
+background:#10B981;
+padding:14px 30px;
+border:none;
+border-radius:6px;
+color:white;
+font-size:16px;
+margin-top:20px;
+display:inline-block;
+text-decoration:none;
+}
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: var(--accent);
-            margin: 1rem auto;
-        }
+section{
+padding:70px 60px;
+}
 
-        /* --- Product Grid --- */
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
+.title{
+text-align:center;
+font-size:34px;
+color:#0B3D2E;
+margin-bottom:40px;
+font-weight:700;
+}
 
-        .product-card {
-            background: var(--white);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: var(--transition);
-            border: 1px solid #eee;
-        }
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
 
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-        }
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
 
-        .product-img {
-            width: 100%;
-            height: 200px;
-            background-color: #f0f0f0;
-            object-fit: cover;
-        }
+.card img{
+width:100%;
+border-radius:8px;
+}
 
-        .product-info {
-            padding: 1.5rem;
-        }
+.card h3{
+color:#0B3D2E;
+}
 
-        .product-info h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
+.certifications{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
 
-        .product-info ul {
-            list-style: none;
-            font-size: 0.9rem;
-            color: #64748b;
-        }
+.cert{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+font-weight:600;
+}
 
-        .product-info li {
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-        }
+form{
+max-width:600px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
 
-        .product-info li::before {
-            content: '✓';
-            color: var(--accent);
-            margin-right: 10px;
-            font-weight: bold;
-        }
+input,textarea,select{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #ccc;
+}
 
-        /* --- Certifications --- */
-        .certs-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            text-align: center;
-        }
+button{
+width:100%;
+padding:14px;
+background:#10B981;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+}
 
-        .cert-tag {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 12px;
-            font-weight: 700;
-            color: var(--primary);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            border-bottom: 3px solid var(--accent);
-        }
+footer{
+background:#0B3D2E;
+color:white;
+text-align:center;
+padding:20px;
+}
 
-        /* --- Inquiry Form --- */
-        .form-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--white);
-            padding: 3rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
+</style>
 
-        .form-group {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 1.5px solid #e2e8f0;
-            border-radius: 8px;
-            font-family: inherit;
-            outline: none;
-            transition: var(--transition);
-        }
-
-        input:focus, select:focus, textarea:focus {
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
-        }
-
-        .full-width {
-            grid-column: span 2;
-        }
-
-        @media (max-width: 768px) {
-            .form-group { grid-template-columns: 1fr; }
-            .full-width { grid-column: span 1; }
-            header { padding: 1rem 20px; }
-            nav { display: none; } /* Add a mobile menu trigger here in production */
-        }
-
-        footer {
-            background: var(--primary);
-            color: var(--white);
-            padding: 3rem 5%;
-            text-align: center;
-        }
-
-        .footer-links {
-            margin: 1.5rem 0;
-        }
-
-        .footer-links a {
-            color: var(--white);
-            margin: 0 10px;
-            text-decoration: none;
-            opacity: 0.8;
-        }
-    </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo">VibeNext Global</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#products">Products</a>
-            <a href="#certifications">Compliance</a>
-            <a href="#contact">Inquiry</a>
-        </nav>
-    </header>
+<header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Nature's Purest Exports</h1>
-            <p>Direct sourcing of premium herbal extracts and nutraceuticals from the heart of India to the world.</p>
-            <a href="#products" class="btn">Explore Catalogue</a>
-        </div>
-    </section>
+<div class="logo">VibeNext Global LLP</div>
 
-    <section id="products">
-        <div class="section-title">
-            <h2>Premium Product Range</h2>
-        </div>
-        <div class="products-grid">
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1515514754512-bc7884370215?auto=format&fit=crop&q=80&w=600" alt="Moringa" class="product-img">
-                <div class="product-info">
-                    <h3>Moringa Leaf Powder</h3>
-                    <ul>
-                        <li>Organic-grade cultivation</li>
-                        <li>High Antioxidant profile</li>
-                        <li>Bulk export packaging</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1611242320536-f12d3541249b?auto=format&fit=crop&q=80&w=600" alt="Ashwagandha" class="product-img">
-                <div class="product-info">
-                    <h3>Ashwagandha Root</h3>
-                    <ul>
-                        <li>High Withanolide content</li>
-                        <li>Stress support focus</li>
-                        <li>Global GMP standards</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1599423958173-e380e2273f64?auto=format&fit=crop&q=80&w=600" alt="Stevia" class="product-img">
-                <div class="product-info">
-                    <h3>Stevia Leaf Powder</h3>
-                    <ul>
-                        <li>Zero-calorie sweetener</li>
-                        <li>High Rebaudioside-A</li>
-                        <li>Pharma-grade quality</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<nav>
 
-    <section id="certifications" style="background-color: #f1f5f9;">
-        <div class="section-title">
-            <h2>Certified Excellence</h2>
-        </div>
-        <div class="certs-container">
-            <div class="cert-tag">IEC REGISTERED</div>
-            <div class="cert-tag">FSSAI CERTIFIED</div>
-            <div class="cert-tag">APEDA MEMBER</div>
-            <div class="cert-tag">ISO 9001:2015</div>
-        </div>
-    </section>
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
 
-    <section id="contact">
-        <div class="section-title">
-            <h2>Global Export Inquiry</h2>
-        </div>
-        <div class="form-container">
-            <form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
-                <div class="form-group">
-                    <input type="text" name="Name" placeholder="Full Name / Company" required>
-                    <input type="email" name="Email" placeholder="Business Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="Country" placeholder="Target Country" required>
-                    <input type="text" name="WhatsApp" placeholder="WhatsApp Number">
-                </div>
-                <select name="Product" class="full-width" required style="margin-bottom: 1.5rem;">
-                    <option value="">Select Primary Product of Interest</option>
-                    <option>Moringa Leaf Powder</option>
-                    <option>Ashwagandha Root Powder</option>
-                    <option>Stevia / Natural Sweeteners</option>
-                    <option>Shilajit / Resin Products</option>
-                    <option>Bulk Raw Herbs</option>
-                </select>
-                <textarea name="Message" class="full-width" rows="5" placeholder="Details (Quantity, Specific Requirements, Shipping Port)"></textarea>
-                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer; margin-top: 1rem;">Submit Export Request</button>
-            </form>
-        </div>
-    </section>
+</nav>
 
-    <footer>
-        <div class="logo" style="color: white; margin-bottom: 1rem;">VibeNext Global LLP</div>
-        <p>Connecting Indian Heritage with Global Wellness.</p>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Export</a>
-        </div>
-        <p style="opacity: 0.6; font-size: 0.8rem; margin-top: 2rem;">© 2026 VibeNext Global LLP. All rights reserved.</p>
-    </footer>
+</header>
+
+<div class="hero">
+
+<div class="hero-box">
+
+<h1>VibeNext Global LLP</h1>
+
+<p>Premium Herbal & Nutraceutical Exporter from India</p>
+
+<div class="contact-info">
+
+Email: info@vibenextglobal.com  
+<br>
+WhatsApp: +91-XXXXXXXXXX
+
+</div>
+
+<a href="#products" class="btn">View Products</a>
+
+</div>
+
+</div>
+
+<section id="products">
+
+<div class="title">Our Premium Export Products</div>
+
+<div class="products">
+
+<div class="card">
+
+<img src="images/moringa.jpg">
+
+<h3>Moringa Leaf Powder</h3>
+
+<ul>
+
+<li>Rich in essential nutrients</li>
+<li>Boosts immunity naturally</li>
+<li>High global export demand</li>
+<li>Supports energy and vitality</li>
+<li>Powerful antioxidant properties</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<img src="images/aonla.jpg">
+
+<h3>Amla Fruit Powder</h3>
+
+<ul>
+
+<li>Excellent source of Vitamin C</li>
+<li>Supports digestive health</li>
+<li>Promotes healthy hair and skin</li>
+<li>Boosts immune system</li>
+<li>Strong global market demand</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<img src="images/ashwagandha.jpg">
+
+<h3>Ashwagandha Root Powder</h3>
+
+<ul>
+
+<li>Reduces stress naturally</li>
+<li>Improves strength and stamina</li>
+<li>Supports mental health</li>
+<li>Boosts immunity</li>
+<li>Highly demanded globally</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<img src="images/shatavari.jpg">
+
+<h3>Shatavari Root Powder</h3>
+
+<ul>
+
+<li>Supports hormonal balance</li>
+<li>Promotes reproductive health</li>
+<li>Boosts immunity</li>
+<li>Improves vitality</li>
+<li>Growing international demand</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<img src="images/stevia.jpg">
+
+<h3>Stevia Leaf Powder</h3>
+
+<ul>
+
+<li>Natural sugar substitute</li>
+<li>Zero calorie sweetener</li>
+<li>Diabetic friendly</li>
+<li>Export quality product</li>
+<li>High global demand</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<img src="images/shilajit.jpg">
+
+<h3>Shilajit Resin Powder</h3>
+
+<ul>
+
+<li>Boosts energy levels</li>
+<li>Improves stamina</li>
+<li>Supports brain health</li>
+<li>Enhances vitality</li>
+<li>Premium export product</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<div class="title">Certifications</div>
+
+<div class="certifications">
+
+<div class="cert">IEC Registered Exporter</div>
+
+<div class="cert">FSSAI Certified</div>
+
+<div class="cert">APEDA Registered</div>
+
+<div class="cert">ISO Compliant Supplier</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="title">Send Export Inquiry</div>
+
+<form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="text" name="Name" placeholder="Company Name / Your Name" required>
+
+<input type="email" name="Email" placeholder="Email Address" required>
+
+<input type="text" name="Country" placeholder="Country" required>
+
+<input type="text" name="WhatsApp" placeholder="WhatsApp Number">
+
+<select name="Product">
+
+<option>Select Product</option>
+
+<option>Moringa Leaf Powder</option>
+<option>Amla Powder</option>
+<option>Ashwagandha Powder</option>
+<option>Shatavari Powder</option>
+<option>Stevia Powder</option>
+<option>Shilajit Powder</option>
+
+</select>
+
+<textarea name="Message" placeholder="Quantity, Packaging, Destination Port, etc."></textarea>
+
+<button type="submit">Send Export Inquiry</button>
+
+</form>
+
+</section>
+
+<footer>
+
+© 2026 VibeNext Global LLP  
+Email: info@vibenextglobal.com  
+WhatsApp: +91-XXXXXXXXXX  
+
+</footer>
 
 </body>
+
 </html>
