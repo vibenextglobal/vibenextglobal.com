@@ -3,178 +3,213 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>VibeNext Global LLP | Premium Herbal Exporter from India</title>
+
+<!-- Premium Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f5;
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#F8FAF9;
+color:#1A1A1A;
 }
 
-/* NAVBAR */
+/* HEADER */
 
-.navbar {
-    background: white;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: flex-end;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+header{
+background:white;
+padding:18px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
-.navbar a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: #1b5e20;
-    font-weight: bold;
+.logo{
+font-size:24px;
+font-weight:700;
+color:#0B3D2E;
 }
 
-/* HERO SECTION */
-
-.hero {
-    background: url("images/herbal-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#333;
+font-weight:600;
 }
 
-.hero-box {
-    background: rgba(0,0,0,0.6);
-    padding: 40px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
+nav a:hover{
+color:#10B981;
 }
 
-.hero-box h1 {
-    font-size: 40px;
+/* HERO */
+
+.hero{
+background:url('images/herbal-bg.jpg') center/cover no-repeat;
+padding:140px 20px;
+text-align:center;
+color:white;
 }
 
-.hero-box p {
-    font-size: 18px;
+.hero-box{
+background:rgba(11,61,46,0.85);
+display:inline-block;
+padding:40px 60px;
+border-radius:10px;
 }
 
-.button {
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: #2e7d32;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.btn{
+background:#10B981;
+color:white;
+padding:14px 30px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+text-decoration:none;
+}
+
+.btn:hover{
+background:#059669;
+}
+
+/* SECTION */
+
+section{
+padding:70px 60px;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+font-weight:700;
+margin-bottom:40px;
+color:#0B3D2E;
 }
 
 /* PRODUCTS */
 
-.products {
-    padding: 50px;
-    text-align: center;
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
 }
 
-.products h2 {
-    color: #1b5e20;
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+.card img{
+width:100%;
+border-radius:8px;
 }
 
-.product-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+.card h3{
+margin-top:15px;
+color:#0B3D2E;
 }
 
-.product-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.product-card h3 {
-    color: #2e7d32;
-}
-
-.product-card ul {
-    text-align: left;
+.card ul{
+padding-left:18px;
 }
 
 /* CERTIFICATIONS */
 
-.certifications {
-    padding: 50px;
-    text-align: center;
+.certifications{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
-.certifications h2 {
-    color: #1b5e20;
+.cert{
+background:white;
+padding:20px 30px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+font-weight:600;
 }
 
-.certifications span {
-    background: white;
-    padding: 10px 20px;
-    margin: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* FORM */
+
+form{
+max-width:600px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
 }
 
-/* CONTACT */
-
-.contact {
-    padding: 50px;
-    text-align: center;
+input,textarea,select{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:15px;
 }
 
-.contact input,
-.contact textarea {
-    width: 300px;
-    padding: 12px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+button{
+width:100%;
+background:#10B981;
+color:white;
+padding:14px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
 }
 
-.contact button {
-    padding: 12px 40px;
-    background: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 5px;
+button:hover{
+background:#059669;
 }
 
 /* FOOTER */
 
-.footer {
-    background: #1b5e20;
-    color: white;
-    padding: 15px;
-    text-align: center;
+footer{
+background:#0B3D2E;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
 
-<div class="navbar">
+<div class="logo">VibeNext Global LLP</div>
 
+<nav>
 <a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
+</nav>
 
-</div>
+</header>
 
 <!-- HERO -->
 
@@ -182,13 +217,11 @@ body {
 
 <div class="hero-box">
 
-<h1>VibeNext Global LLP</h1>
+<h1>Premium Herbal Exporter from India</h1>
 
-<p>Premium Herbal Exporter from India</p>
+<p>Trusted supplier of high-quality herbal powders and nutraceutical products worldwide</p>
 
-<p>Email: info@vibenextglobal.com</p>
-
-<a href="#products" class="button">Explore Products</a>
+<a href="#products" class="btn">Explore Products</a>
 
 </div>
 
@@ -196,147 +229,141 @@ body {
 
 <!-- PRODUCTS -->
 
-<div id="products" class="products">
+<section id="products">
 
-<h2>Our Premium Herbal Products</h2>
+<div class="section-title">Our Premium Herbal Products</div>
 
-<div class="product-grid">
+<div class="products">
 
-<div class="product-card">
+<div class="card">
 <img src="images/moringa.jpg">
-<h3>Moringa Powder Benefits</h3>
+<h3>Moringa Powder</h3>
 <ul>
-<li>Boosts immunity naturally</li>
-<li>Improves energy</li>
+<li>Boosts immunity</li>
 <li>Rich in antioxidants</li>
-<li>Supports heart health</li>
+<li>Supports energy & stamina</li>
+<li>High global demand</li>
 </ul>
 </div>
 
-<div class="product-card">
+<div class="card">
 <img src="images/aonla.jpg">
-<h3>Aonla Powder Benefits</h3>
+<h3>Amla Powder</h3>
 <ul>
-<li>Rich in Vitamin C</li>
+<li>Rich source of Vitamin C</li>
 <li>Improves digestion</li>
-<li>Boosts immunity</li>
+<li>Supports hair & skin</li>
 <li>Powerful antioxidant</li>
 </ul>
 </div>
 
-<div class="product-card">
+<div class="card">
 <img src="images/ashwagandha.jpg">
-<h3>Ashwagandha Benefits</h3>
+<h3>Ashwagandha Powder</h3>
 <ul>
 <li>Reduces stress</li>
 <li>Improves strength</li>
-<li>Boosts immunity</li>
-<li>Enhances stamina</li>
-</ul>
-</div>
-
-<div class="product-card">
-<img src="images/shilajit.jpg">
-<h3>Shilajit Benefits</h3>
-<ul>
-<li>Boosts energy</li>
-<li>Improves stamina</li>
-<li>Supports brain health</li>
-<li>Anti-aging properties</li>
-</ul>
-</div>
-
-<div class="product-card">
-<img src="images/turmeric.jpg">
-<h3>Turmeric Benefits</h3>
-<ul>
-<li>Powerful anti-inflammatory</li>
-<li>Boosts immunity</li>
-<li>Improves digestion</li>
-<li>Rich in antioxidants</li>
-</ul>
-</div>
-
-<div class="product-card">
-<img src="images/jaggery.jpg">
-<h3>Jaggery Benefits</h3>
-<ul>
-<li>Improves digestion</li>
-<li>Rich in iron</li>
-<li>Boosts immunity</li>
-<li>Natural detoxifier</li>
-</ul>
-</div>
-
-<div class="product-card">
-<img src="images/stevia.jpg">
-<h3>Stevia Benefits</h3>
-<ul>
-<li>Natural sweetener</li>
-<li>Zero calories</li>
-<li>Good for diabetics</li>
+<li>Supports brain function</li>
 <li>High export demand</li>
 </ul>
 </div>
 
+<div class="card">
+<img src="images/shatavari.jpg">
+<h3>Shatavari Powder</h3>
+<ul>
+<li>Supports hormonal balance</li>
+<li>Improves reproductive health</li>
+<li>Boosts immunity</li>
+<li>High demand in global markets</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="images/stevia.jpg">
+<h3>Stevia Powder</h3>
+<ul>
+<li>Natural sugar alternative</li>
+<li>Zero calories</li>
+<li>Diabetic friendly</li>
+<li>Growing international demand</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="images/jaggery.jpg">
+<h3>Jaggery Powder</h3>
+<ul>
+<li>Rich in iron</li>
+<li>Natural sweetener</li>
+<li>Improves digestion</li>
+<li>High export quality</li>
+</ul>
 </div>
 
 </div>
+
+</section>
 
 <!-- CERTIFICATIONS -->
 
-<div id="certifications" class="certifications">
+<section id="certifications">
 
-<h2>Certifications</h2>
+<div class="section-title">Certifications</div>
 
-<span>IEC Registered Exporter</span>
-<span>FSSAI Certified</span>
-<span>APEDA Registered</span>
-<span>ISO Suppliers</span>
+<div class="certifications">
+
+<div class="cert">IEC Registered Exporter</div>
+<div class="cert">FSSAI Certified</div>
+<div class="cert">APEDA Registered</div>
+<div class="cert">ISO Compliant Supplier</div>
 
 </div>
 
+</section>
+
 <!-- CONTACT -->
 
-<div id="contact" class="contact">
+<section id="contact">
 
-<h2>Send Export Inquiry</h2>
+<div class="section-title">Send Export Inquiry</div>
 
 <form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
 
 <input type="hidden" name="_captcha" value="false">
 
-<br>
-
 <input type="text" name="Name" placeholder="Your Name / Company Name" required>
 
-<br>
+<input type="email" name="Email" placeholder="Your Email Address" required>
 
-<input type="email" name="Email" placeholder="Your Email" required>
+<input type="text" name="Country" placeholder="Country" required>
 
-<br>
+<input type="text" name="WhatsApp" placeholder="WhatsApp Number">
 
-<input type="text" name="Country" placeholder="Country">
+<select name="Product">
+<option>Select Product</option>
+<option>Moringa Powder</option>
+<option>Amla Powder</option>
+<option>Ashwagandha Powder</option>
+<option>Shatavari Powder</option>
+<option>Stevia Powder</option>
+<option>Jaggery Powder</option>
+</select>
 
-<br>
-
-<textarea name="Requirement" placeholder="Your requirement"></textarea>
-
-<br>
+<textarea name="Message" placeholder="Quantity, Packaging, Destination Port, etc." required></textarea>
 
 <button type="submit">Send Inquiry</button>
 
 </form>
 
-</div>
+</section>
 
-<!-- FOOTER -->
+<footer>
 
-<div class="footer">
+© 2026 VibeNext Global LLP | Premium Herbal Exporter from India  
+Email: info@vibenextglobal.com
 
-© 2026 VibeNext Global LLP | Email: info@vibenextglobal.com
-
-</div>
+</footer>
 
 </body>
 </html>
