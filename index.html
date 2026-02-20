@@ -17,10 +17,7 @@ font-family:'Inter',sans-serif;
 margin:0;
 background:#F4F8F6;
 color:#1A1A1A;
-line-height:1.6;
 }
-
-/* HEADER */
 
 header{
 background:white;
@@ -28,11 +25,11 @@ padding:18px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-box-shadow:0 2px 15px rgba(0,0,0,0.08);
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
 }
 
 .logo{
-font-family:'Playfair Display',serif;
+font-family:'Playfair Display';
 font-size:26px;
 font-weight:700;
 color:#0B3D2E;
@@ -41,15 +38,9 @@ color:#0B3D2E;
 nav a{
 margin-left:30px;
 text-decoration:none;
-font-weight:500;
 color:#333;
+font-weight:500;
 }
-
-nav a:hover{
-color:#10B981;
-}
-
-/* HERO */
 
 .hero{
 height:600px;
@@ -60,25 +51,23 @@ align-items:center;
 text-align:center;
 }
 
-.hero-overlay{
-background:rgba(11,61,46,0.85);
-padding:60px 80px;
+.hero-box{
+background:rgba(11,61,46,0.9);
+padding:60px;
 border-radius:12px;
 color:white;
 }
 
-.hero-overlay h1{
-font-family:'Playfair Display',serif;
+.hero-box h1{
+font-family:'Playfair Display';
 font-size:52px;
 margin:0;
 }
 
-.hero-overlay p{
+.hero-box p{
 font-size:18px;
 margin-top:15px;
 }
-
-/* SECTIONS */
 
 section{
 padding:70px 60px;
@@ -86,39 +75,34 @@ padding:70px 60px;
 
 .title{
 text-align:center;
-font-family:'Playfair Display',serif;
+font-family:'Playfair Display';
 font-size:36px;
-color:#0B3D2E;
 margin-bottom:40px;
+color:#0B3D2E;
 }
 
-/* ABOUT */
-
-.about{
+.about,.quality,.packaging{
 background:white;
 padding:40px;
 border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+line-height:1.8;
 }
-
-/* CERTIFICATIONS */
 
 .certifications{
 display:flex;
-justify-content:center;
-gap:20px;
 flex-wrap:wrap;
+gap:20px;
+justify-content:center;
 }
 
 .cert{
 background:white;
-padding:20px 30px;
+padding:20px;
 border-radius:8px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 font-weight:600;
 }
-
-/* PRODUCTS */
 
 .products{
 display:grid;
@@ -130,7 +114,7 @@ gap:25px;
 background:white;
 padding:20px;
 border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .card img{
@@ -139,59 +123,46 @@ border-radius:8px;
 }
 
 .card h3{
-font-family:'Playfair Display',serif;
+font-family:'Playfair Display';
 color:#0B3D2E;
 }
-
-/* QUALITY & PACKAGING */
-
-.quality,.packaging{
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
-
-/* COUNTRIES */
 
 .countries{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
 gap:15px;
+justify-content:center;
 }
 
 .country{
 background:white;
 padding:12px 20px;
 border-radius:6px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 font-weight:600;
 }
 
-/* FORM */
-
 form{
-max-width:600px;
+max-width:700px;
 margin:auto;
 background:white;
-padding:30px;
-border-radius:10px;
+padding:40px;
+border-radius:12px;
 box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
-input,textarea,select{
+input,select,textarea{
 width:100%;
 padding:14px;
-margin-bottom:15px;
+margin-bottom:18px;
 border-radius:6px;
 border:1px solid #ccc;
-font-family:'Inter';
+font-size:15px;
 }
 
 button{
 width:100%;
-padding:14px;
+padding:16px;
 background:#10B981;
 color:white;
 border:none;
@@ -204,22 +175,17 @@ button:hover{
 background:#0B3D2E;
 }
 
-/* FOOTER */
-
 footer{
 background:#0B3D2E;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 }
-
-/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
-z-index:999;
 }
 
 .whatsapp img{
@@ -237,10 +203,8 @@ width:60px;
 <div class="logo">VibeNext Global LLP</div>
 
 <nav>
-<a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#products">Products</a>
-<a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -248,11 +212,13 @@ width:60px;
 
 <div class="hero">
 
-<div class="hero-overlay">
+<div class="hero-box">
 
 <h1>VibeNext Global LLP</h1>
 
-<p>Delivering Naturally Grown Herbal Products Worldwide</p>
+<p>Premium Herbal Exporter from India</p>
+
+<p>Email: info@vibenextglobal.com</p>
 
 </div>
 
@@ -264,13 +230,15 @@ width:60px;
 
 <div class="about">
 
-VibeNext Global LLP is committed to adding value to everybody’s health by providing premium herbal products grown naturally. We ensure authenticity, purity, and consistent export quality while building long-term relationships with global partners.
+VibeNext Global LLP is dedicated to adding value to everybody’s health by providing premium herbal products grown naturally. We work with trusted growers who follow natural cultivation practices and ensure every product maintains its purity and authenticity.
+
+Our mission is to supply high-quality herbal products to global markets while maintaining strict hygiene, quality assurance, and export standards. We focus on long-term partnerships with international buyers and aim to deliver reliable and consistent export services.
 
 </div>
 
 </section>
 
-<section id="certifications">
+<section>
 
 <div class="title">Certifications</div>
 
@@ -291,44 +259,88 @@ VibeNext Global LLP is committed to adding value to everybody’s health by prov
 
 <div class="products">
 
-<!-- MORINGA -->
-
 <div class="card">
-
 <img src="images/moringa.jpg">
-
 <h3>Moringa Leaf</h3>
-
 <ul>
-
-<li>Rich in natural nutrients</li>
+<li>Rich in essential nutrients</li>
+<li>Carefully harvested</li>
 <li>Premium export quality</li>
-<li>Carefully processed</li>
-<li>Maintains natural color</li>
+<li>Natural cultivation</li>
 <li>Suitable for nutraceutical industry</li>
-
 </ul>
-
 </div>
 
-<!-- JAGGERY -->
+<div class="card">
+<img src="images/aonla.jpg">
+<h3>Amla Fruit</h3>
+<ul>
+<li>Natural Vitamin C source</li>
+<li>Premium export quality</li>
+<li>Authentic product</li>
+<li>Carefully processed</li>
+<li>Suitable for health applications</li>
+</ul>
+</div>
 
 <div class="card">
-
-<img src="images/jaggery.jpg">
-
-<h3>Jaggery</h3>
-
+<img src="images/ashwagandha.jpg">
+<h3>Ashwagandha Root</h3>
 <ul>
-
-<li>Natural sugarcane product</li>
-<li>No chemical refining</li>
-<li>Traditional processing method</li>
-<li>Maintains natural taste</li>
+<li>Authentic herbal product</li>
 <li>Premium export quality</li>
-
+<li>Natural cultivation</li>
+<li>Carefully processed</li>
+<li>Global nutraceutical use</li>
 </ul>
+</div>
 
+<div class="card">
+<img src="images/makhana.jpg">
+<h3>Makhana</h3>
+<ul>
+<li>Premium lotus seeds</li>
+<li>Carefully graded</li>
+<li>Export quality</li>
+<li>Natural product</li>
+<li>Food industry use</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="images/stevia.jpg">
+<h3>Stevia Leaf</h3>
+<ul>
+<li>Natural sweetener</li>
+<li>Premium quality</li>
+<li>No additives</li>
+<li>Carefully processed</li>
+<li>Food applications</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="images/shilajit.jpg">
+<h3>Shilajit Resin</h3>
+<ul>
+<li>Natural resin</li>
+<li>Carefully purified</li>
+<li>Premium export quality</li>
+<li>Maintains natural composition</li>
+<li>Nutraceutical use</li>
+</ul>
+</div>
+
+<div class="card">
+<img src="images/jaggery.jpg">
+<h3>Jaggery</h3>
+<ul>
+<li>Natural sugarcane product</li>
+<li>Traditional processing</li>
+<li>Premium export quality</li>
+<li>No chemical refining</li>
+<li>Authentic taste</li>
+</ul>
 </div>
 
 </div>
@@ -337,13 +349,32 @@ VibeNext Global LLP is committed to adding value to everybody’s health by prov
 
 <section id="contact">
 
-<div class="title">Send Inquiry</div>
+<div class="title">Send Export Inquiry</div>
 
 <form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
 
-<input type="text" name="Name" placeholder="Company Name" required>
+<input type="text" name="Company Name" placeholder="Company Name" required>
 
 <input type="email" name="Email" placeholder="Email Address" required>
+
+<input type="text" name="Country" placeholder="Country">
+
+<input type="text" name="WhatsApp" placeholder="WhatsApp Number">
+
+<select name="Product">
+
+<option>Select Product</option>
+<option>Moringa</option>
+<option>Amla</option>
+<option>Ashwagandha</option>
+<option>Makhana</option>
+<option>Stevia</option>
+<option>Shilajit</option>
+<option>Jaggery</option>
+
+</select>
+
+<input type="text" name="Quantity" placeholder="Required Quantity">
 
 <textarea name="Message" placeholder="Requirement details"></textarea>
 
@@ -356,7 +387,7 @@ VibeNext Global LLP is committed to adding value to everybody’s health by prov
 <footer>
 
 © VibeNext Global LLP  
-info@vibenextglobal.com
+Email: info@vibenextglobal.com
 
 </footer>
 
@@ -367,5 +398,4 @@ info@vibenextglobal.com
 </a>
 
 </body>
-
 </html>
