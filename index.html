@@ -17,19 +17,64 @@ background:#f4f7f6;
 color:#333;
 }
 
-/* HEADER */
+/* TOP NAVBAR */
+.navbar{
+background:white;
+padding:12px 30px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:55px;
+}
+
+.logo-text{
+font-weight:700;
+color:#006633;
+font-size:20px;
+}
+
+.nav-links a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.nav-links a:hover{
+color:#00a651;
+}
+
+/* HEADER HERO */
 header{
 background:linear-gradient(rgba(0,100,50,0.8), rgba(0,100,50,0.8)),
 url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716');
 background-size:cover;
 background-position:center;
 color:white;
-padding:80px 20px;
+padding:100px 20px;
 text-align:center;
 }
 
+header img{
+width:120px;
+margin-bottom:15px;
+}
+
 header h1{
-font-size:40px;
+font-size:42px;
 margin-bottom:10px;
 }
 
@@ -61,6 +106,12 @@ section{
 padding:50px 20px;
 max-width:1200px;
 margin:auto;
+}
+
+h2{
+text-align:center;
+color:#006633;
+margin-bottom:30px;
 }
 
 /* PRODUCTS GRID */
@@ -163,7 +214,27 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 
 <body>
 
+<!-- NAVBAR -->
+<div class="navbar">
+
+<div class="logo">
+<img src="images/logo.png">
+<div class="logo-text">VibeNext Global LLP</div>
+</div>
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+
+<!-- HERO HEADER -->
 <header>
+
+<img src="images/logo.png">
 
 <h1>VibeNext Global LLP</h1>
 
@@ -183,17 +254,12 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 <h2>About Our Company</h2>
 
 <p>
-
-VibeNext Global LLP is a trusted exporter of premium herbal and nutraceutical products from India.  
-
+VibeNext Global LLP is a trusted exporter of premium herbal and nutraceutical products from India.
 We specialize in exporting moringa powder, aonla powder, ashwagandha, shilajit, jaggery, stevia, turmeric and other herbal products.
-
 </p>
 
 <p>
-
 We export to UAE, Saudi Arabia, Europe, USA and global markets.
-
 </p>
 
 </section>
@@ -265,15 +331,10 @@ We export to UAE, Saudi Arabia, Europe, USA and global markets.
 <div class="why">
 
 <div class="why-box">Direct sourcing from farmers</div>
-
 <div class="why-box">Export quality packaging</div>
-
 <div class="why-box">Competitive international pricing</div>
-
 <div class="why-box">Timely worldwide delivery</div>
-
 <div class="why-box">Trusted exporter from India</div>
-
 <div class="why-box">Premium quality products</div>
 
 </div>
@@ -288,11 +349,8 @@ We export to UAE, Saudi Arabia, Europe, USA and global markets.
 <form>
 
 <input placeholder="Your Name">
-
 <input placeholder="Your Email">
-
 <input placeholder="Country">
-
 <textarea placeholder="Your Requirement"></textarea>
 
 <button class="btn">Send Inquiry</button>
@@ -310,7 +368,6 @@ We export to UAE, Saudi Arabia, Europe, USA and global markets.
 
 
 <a class="whatsapp" href="https://wa.me/919000000000">💬</a>
-
 
 </body>
 </html>
