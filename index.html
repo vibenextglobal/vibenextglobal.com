@@ -4,93 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VibeNext Global LLP | Exporter of Agricultural & Herbal Products from India</title>
+<title>VibeNext Global LLP | Exporter from India</title>
 
 <style>
 
-body {
+body{
 font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
+margin:0;
+background:#f4f6f8;
 }
 
-header {
-background-color: #0b6623;
-color: white;
-padding: 20px;
-text-align: center;
+header{
+background:#0a7d3b;
+color:white;
+padding:20px;
+text-align:center;
 }
 
-header h1 {
-margin: 0;
+.container{
+padding:20px;
 }
 
-.container {
-padding: 20px;
-max-width: 1200px;
-margin: auto;
+h2{
+text-align:center;
+margin-bottom:20px;
 }
 
-.section-title {
-text-align: center;
-margin-bottom: 20px;
+.product-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
-.products {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 20px;
+.product{
+background:white;
+padding:15px;
+border-radius:8px;
+width:250px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
-.product {
-background: white;
-padding: 15px;
-border-radius: 8px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
-text-align: center;
+.product img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:6px;
 }
 
-.product img {
-width: 100%;
-height: 200px;
-object-fit: cover;
-border-radius: 5px;
+.product h3{
+margin:10px 0 5px;
+color:#0a7d3b;
 }
 
-.product h3 {
-margin: 10px 0;
-color: #0b6623;
+.product p{
+font-size:14px;
 }
 
-.product p {
-font-size: 14px;
+.why{
+background:white;
+padding:20px;
+margin-top:30px;
+border-radius:8px;
 }
 
-.contact {
-background: #0b6623;
-color: white;
-padding: 20px;
-text-align: center;
+.form-container{
+background:white;
+padding:20px;
+margin-top:30px;
+border-radius:8px;
 }
 
-.whatsapp {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: #25D366;
-color: white;
-padding: 15px;
-border-radius: 50%;
-font-size: 20px;
-text-decoration: none;
+input, textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
 }
 
-footer {
-background: #333;
-color: white;
-text-align: center;
-padding: 10px;
+button{
+background:#0a7d3b;
+color:white;
+padding:12px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+width:100%;
+font-size:16px;
+}
+
+button:hover{
+background:#08632e;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+footer{
+background:#0a7d3b;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
 }
 
 </style>
@@ -100,80 +126,126 @@ padding: 10px;
 <body>
 
 <header>
-
 <h1>VibeNext Global LLP</h1>
-
-<p>Trusted Exporter of Premium Agricultural & Herbal Products from India</p>
-
+<p>Trusted Exporter of Agricultural & Herbal Products from India</p>
+<p>Email: info@vibenextglobal.com | WhatsApp: +91 9250324200</p>
 <p>Exporting to UAE | Saudi Arabia | Europe | USA | Asia</p>
-
 </header>
 
 <div class="container">
 
-<h2 class="section-title">Our Export Products</h2>
+<h2>Our Export Products</h2>
 
-<div class="products">
+<div class="product-container">
 
 <div class="product">
-<img src="images/banana.jpeg">
-<h3>Fresh Banana Export</h3>
-<p>Export quality Cavendish bananas. Carefully graded and packed for international markets. Bulk supply available.</p>
+<img src="images/banana.jpg">
+<h3>Banana Export</h3>
+<p>Export quality Cavendish bananas with international packaging.</p>
 </div>
 
 <div class="product">
-<img src="images/onion.jpeg">
-<h3>Fresh Red Onion Export</h3>
-<p>Premium quality Indian red onions with long shelf life. Export packaging available.</p>
+<img src="images/onion.jpg">
+<h3>Onion Export</h3>
+<p>Premium Indian onions with long shelf life for export markets.</p>
 </div>
 
 <div class="product">
-<img src="images/chilli.jpeg">
-<h3>Fresh Green Chilli Export</h3>
-<p>Fresh export quality green chillies. Hygienically packed and suitable for international export.</p>
+<img src="images/green-chilli.jpg">
+<h3>Green Chilli Export</h3>
+<p>Fresh export quality green chillies hygienically packed.</p>
 </div>
 
 <div class="product">
-<img src="images/moringa.jpeg">
+<img src="images/moringa-powder.jpg">
 <h3>Moringa Powder Export</h3>
-<p>High quality moringa powder with excellent nutritional value. Export grade packaging available.</p>
+<p>High quality moringa powder with excellent nutritional value.</p>
 </div>
 
 <div class="product">
-<img src="images/aonla.jpeg">
-<h3>Amla Powder Export</h3>
-<p>Premium quality Indian aonla powder rich in Vitamin C. Bulk export available.</p>
+<img src="images/garlic.jpg">
+<h3>Garlic Export</h3>
+<p>Premium quality garlic suitable for global export.</p>
 </div>
 
 <div class="product">
-<img src="images/jaggery.jpeg">
-<h3>Jaggery Export</h3>
-<p>Natural jaggery sourced directly from farms. Chemical-free and export quality.</p>
-</div>
-
-<div class="product">
-<img src="images/turmeric.jpeg">
+<img src="images/turmeric.jpg">
 <h3>Turmeric Export</h3>
-<p>High curcumin turmeric powder and fingers available for export.</p>
+<p>High curcumin turmeric fingers and powder for export.</p>
+</div>
+
+<div class="product">
+<img src="images/amla.jpg">
+<h3>Amla Export</h3>
+<p>Fresh Indian gooseberry for food and herbal industries.</p>
+</div>
+
+<div class="product">
+<img src="images/pomegranate.jpg">
+<h3>Pomegranate Export</h3>
+<p>Export quality pomegranates with excellent shelf life.</p>
+</div>
+
+<div class="product">
+<img src="images/ginger.jpg">
+<h3>Ginger Export</h3>
+<p>Fresh ginger hygienically packed for international buyers.</p>
+</div>
+
+<div class="product">
+<img src="images/mango.jpg">
+<h3>Mango Export</h3>
+<p>Premium Indian mango varieties including Alphonso and Kesar.</p>
 </div>
 
 </div>
 
+
+<div class="why">
+
+<h2>Why Choose VibeNext Global LLP</h2>
+
+<ul>
+
+<li>Direct sourcing from farmers</li>
+<li>Export quality grading and packaging</li>
+<li>Competitive international pricing</li>
+<li>Timely delivery</li>
+<li>Trusted global supplier</li>
+<li>Custom packaging available</li>
+
+</ul>
+
 </div>
 
-<div class="contact">
 
-<h2>Contact Us for Export Inquiry</h2>
+<div class="form-container">
 
-<p>Email: vibenextglobal@gmail.com</p>
+<h2>Send Inquiry</h2>
 
-<p>WhatsApp: +91-XXXXXXXXXX</p>
+<form action="mailto:info@vibenextglobal.com" method="post" enctype="text/plain">
 
-<p>VibeNext Global LLP, India</p>
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Country" required>
+
+<textarea placeholder="Your Requirement" required></textarea>
+
+<button type="submit">Send Inquiry</button>
+
+</form>
 
 </div>
 
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">W</a>
+</div>
+
+
+<a class="whatsapp" href="https://wa.me/919250324200" target="_blank">
+W
+</a>
+
 
 <footer>
 
@@ -181,5 +253,7 @@ padding: 10px;
 
 </footer>
 
+
 </body>
+
 </html>
