@@ -8,7 +8,7 @@
 
 <title>VibeNext Global LLP | Premium Herbal Exporter from India</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -17,11 +17,14 @@ font-family:'Inter',sans-serif;
 margin:0;
 background:#F4F8F6;
 color:#1A1A1A;
+line-height:1.6;
 }
+
+/* HEADER */
 
 header{
 background:white;
-padding:20px 60px;
+padding:18px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -29,16 +32,16 @@ box-shadow:0 2px 15px rgba(0,0,0,0.08);
 }
 
 .logo{
+font-family:'Playfair Display',serif;
 font-size:26px;
 font-weight:700;
 color:#0B3D2E;
-font-family:'Playfair Display',serif;
 }
 
 nav a{
 margin-left:30px;
 text-decoration:none;
-font-weight:600;
+font-weight:500;
 color:#333;
 }
 
@@ -46,40 +49,36 @@ nav a:hover{
 color:#10B981;
 }
 
+/* HERO */
+
 .hero{
-background:url('images/herbal-bg.jpg') center/cover;
-padding:140px 20px;
+height:600px;
+background:url('images/herbal-bg.jpg') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
 }
 
-.hero-box{
-background:rgba(11,61,46,0.92);
-padding:50px;
+.hero-overlay{
+background:rgba(11,61,46,0.85);
+padding:60px 80px;
 border-radius:12px;
-display:inline-block;
 color:white;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
-font-family:'Playfair Display';
+.hero-overlay h1{
+font-family:'Playfair Display',serif;
+font-size:52px;
+margin:0;
 }
 
-.hero p{
+.hero-overlay p{
 font-size:18px;
-margin-bottom:15px;
+margin-top:15px;
 }
 
-.btn{
-background:#10B981;
-padding:14px 30px;
-border:none;
-border-radius:6px;
-color:white;
-font-size:16px;
-text-decoration:none;
-}
+/* SECTIONS */
 
 section{
 padding:70px 60px;
@@ -87,35 +86,39 @@ padding:70px 60px;
 
 .title{
 text-align:center;
-font-size:34px;
+font-family:'Playfair Display',serif;
+font-size:36px;
 color:#0B3D2E;
 margin-bottom:40px;
-font-weight:700;
 }
+
+/* ABOUT */
 
 .about{
 background:white;
-border-radius:10px;
 padding:40px;
+border-radius:10px;
 box-shadow:0 4px 15px rgba(0,0,0,0.08);
-line-height:1.7;
-font-size:17px;
 }
 
-.countries{
+/* CERTIFICATIONS */
+
+.certifications{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
-gap:15px;
+gap:20px;
+flex-wrap:wrap;
 }
 
-.country{
+.cert{
 background:white;
-padding:12px 20px;
-border-radius:6px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+padding:20px 30px;
+border-radius:8px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 font-weight:600;
 }
+
+/* PRODUCTS */
 
 .products{
 display:grid;
@@ -136,24 +139,37 @@ border-radius:8px;
 }
 
 .card h3{
+font-family:'Playfair Display',serif;
 color:#0B3D2E;
 }
 
-.quality{
+/* QUALITY & PACKAGING */
+
+.quality,.packaging{
 background:white;
 padding:40px;
 border-radius:10px;
 box-shadow:0 4px 15px rgba(0,0,0,0.08);
-line-height:1.8;
 }
 
-.packaging{
-background:white;
-padding:40px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-line-height:1.8;
+/* COUNTRIES */
+
+.countries{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
 }
+
+.country{
+background:white;
+padding:12px 20px;
+border-radius:6px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+font-weight:600;
+}
+
+/* FORM */
 
 form{
 max-width:600px;
@@ -170,6 +186,7 @@ padding:14px;
 margin-bottom:15px;
 border-radius:6px;
 border:1px solid #ccc;
+font-family:'Inter';
 }
 
 button{
@@ -180,7 +197,14 @@ color:white;
 border:none;
 border-radius:6px;
 font-size:16px;
+cursor:pointer;
 }
+
+button:hover{
+background:#0B3D2E;
+}
+
+/* FOOTER */
 
 footer{
 background:#0B3D2E;
@@ -188,6 +212,8 @@ color:white;
 text-align:center;
 padding:20px;
 }
+
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -214,9 +240,7 @@ width:60px;
 <a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#products">Products</a>
-<a href="#quality">Quality</a>
-<a href="#packaging">Packaging</a>
-<a href="#countries">Export Countries</a>
+<a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -224,13 +248,11 @@ width:60px;
 
 <div class="hero">
 
-<div class="hero-box">
+<div class="hero-overlay">
 
-<h1>Premium Herbal Exporter</h1>
+<h1>VibeNext Global LLP</h1>
 
 <p>Delivering Naturally Grown Herbal Products Worldwide</p>
-
-<a href="#products" class="btn">Explore Products</a>
 
 </div>
 
@@ -238,64 +260,26 @@ width:60px;
 
 <section id="about">
 
-<div class="title">About VibeNext Global LLP</div>
+<div class="title">About Company</div>
 
 <div class="about">
 
-VibeNext Global LLP is committed to adding value to everybody’s health by providing premium herbal products grown naturally and processed under strict hygienic standards. We work closely with trusted growers and ensure authenticity, purity, and consistency in every shipment. Our mission is to deliver reliable herbal solutions to global partners while maintaining transparency, quality assurance, and long-term business relationships.
+VibeNext Global LLP is committed to adding value to everybody’s health by providing premium herbal products grown naturally. We ensure authenticity, purity, and consistent export quality while building long-term relationships with global partners.
 
 </div>
 
 </section>
 
-<section id="quality">
+<section id="certifications">
 
-<div class="title">Quality Assurance</div>
+<div class="title">Certifications</div>
 
-<div class="quality">
+<div class="certifications">
 
-• Carefully sourced from trusted growers  
-• Hygienically processed and handled  
-• Strict quality inspection before shipment  
-• Maintains natural composition and purity  
-• Suitable for global nutraceutical and food industries  
-
-</div>
-
-</section>
-
-<section id="packaging">
-
-<div class="title">Packaging & Export Details</div>
-
-<div class="packaging">
-
-• Export-grade moisture-resistant packaging  
-• Available in bulk and custom packaging options  
-• Proper labeling and documentation provided  
-• Secure packaging to ensure safe international transit  
-• Flexible packaging based on buyer requirements  
-
-</div>
-
-</section>
-
-<section id="countries">
-
-<div class="title">Export Countries Served</div>
-
-<div class="countries">
-
-<div class="country">United States</div>
-<div class="country">United Kingdom</div>
-<div class="country">Germany</div>
-<div class="country">France</div>
-<div class="country">United Arab Emirates</div>
-<div class="country">Saudi Arabia</div>
-<div class="country">Canada</div>
-<div class="country">Australia</div>
-<div class="country">Singapore</div>
-<div class="country">Netherlands</div>
+<div class="cert">IEC Registered Exporter</div>
+<div class="cert">FSSAI Certified</div>
+<div class="cert">APEDA Registered</div>
+<div class="cert">ISO Compliant Supplier</div>
 
 </div>
 
@@ -303,80 +287,48 @@ VibeNext Global LLP is committed to adding value to everybody’s health by prov
 
 <section id="products">
 
-<div class="title">Our Export Products</div>
+<div class="title">Our Products</div>
 
 <div class="products">
 
+<!-- MORINGA -->
+
 <div class="card">
+
 <img src="images/moringa.jpg">
+
 <h3>Moringa Leaf</h3>
+
 <ul>
-<li>Rich natural nutrient profile</li>
-<li>Carefully sourced and processed</li>
+
+<li>Rich in natural nutrients</li>
 <li>Premium export quality</li>
-<li>Maintains natural color and aroma</li>
-<li>Suitable for nutraceutical use</li>
-</ul>
-</div>
-
-<div class="card">
-<img src="images/aonla.jpg">
-<h3>Amla Fruit</h3>
-<ul>
-<li>Excellent natural Vitamin C source</li>
-<li>Carefully harvested and processed</li>
-<li>Maintains natural nutritional value</li>
-<li>Premium export quality</li>
-<li>Suitable for global markets</li>
-</ul>
-</div>
-
-<div class="card">
-<img src="images/makhana.jpg">
-<h3>Makhana</h3>
-<ul>
-<li>Premium graded lotus seeds</li>
-<li>Carefully selected for export</li>
-<li>Natural purity maintained</li>
-<li>Processed hygienically</li>
-<li>Suitable for food industry</li>
-</ul>
-</div>
-
-<div class="card">
-<img src="images/stevia.jpg">
-<h3>Stevia Leaf</h3>
-<ul>
-<li>Natural plant-based sweetener</li>
-<li>No artificial additives</li>
-<li>Carefully dried and processed</li>
-<li>Premium export quality</li>
-<li>Suitable for food applications</li>
-</ul>
-</div>
-
-<div class="card">
-<img src="images/shilajit.jpg">
-<h3>Shilajit Resin</h3>
-<ul>
-<li>Carefully purified natural resin</li>
-<li>Maintains natural composition</li>
-<li>Premium quality material</li>
-<li>Processed hygienically</li>
+<li>Carefully processed</li>
+<li>Maintains natural color</li>
 <li>Suitable for nutraceutical industry</li>
+
 </ul>
+
 </div>
 
+<!-- JAGGERY -->
+
 <div class="card">
+
 <img src="images/jaggery.jpg">
+
 <h3>Jaggery</h3>
+
 <ul>
+
 <li>Natural sugarcane product</li>
 <li>No chemical refining</li>
 <li>Traditional processing method</li>
 <li>Maintains natural taste</li>
 <li>Premium export quality</li>
+
 </ul>
+
 </div>
 
 </div>
@@ -385,27 +337,13 @@ VibeNext Global LLP is committed to adding value to everybody’s health by prov
 
 <section id="contact">
 
-<div class="title">Send Export Inquiry</div>
+<div class="title">Send Inquiry</div>
 
 <form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
 
-<input type="hidden" name="_captcha" value="false">
-
-<input type="text" name="Name" placeholder="Company Name / Contact Person" required>
+<input type="text" name="Name" placeholder="Company Name" required>
 
 <input type="email" name="Email" placeholder="Email Address" required>
-
-<input type="text" name="Country" placeholder="Country">
-
-<select name="Product">
-<option>Select Product</option>
-<option>Moringa</option>
-<option>Amla</option>
-<option>Makhana</option>
-<option>Stevia</option>
-<option>Shilajit</option>
-<option>Jaggery</option>
-</select>
 
 <textarea name="Message" placeholder="Requirement details"></textarea>
 
@@ -418,13 +356,16 @@ VibeNext Global LLP is committed to adding value to everybody’s health by prov
 <footer>
 
 © VibeNext Global LLP  
-info@vibenextglobal.com  
+info@vibenextglobal.com
 
 </footer>
 
 <a href="https://wa.me/919250324200" class="whatsapp">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
 </a>
 
 </body>
+
 </html>
