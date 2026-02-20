@@ -3,136 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>VibeNext Global LLP | Herbal Exporter from India</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
-font-family:Poppins, sans-serif;
-background:#f4f7f6;
-color:#333;
+font-family:Arial, sans-serif;
+background:#f4f6f5;
 }
 
-/* TOP NAVBAR */
-.navbar{
-background:white;
-padding:12px 30px;
+/* HEADER */
+.header{
 display:flex;
-align-items:center;
 justify-content:space-between;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 position:sticky;
 top:0;
 z-index:1000;
 }
 
 .logo{
+width:130px;
+}
+
+.nav a{
+margin-left:25px;
+text-decoration:none;
+color:#0a5c36;
+font-weight:bold;
+}
+
+/* HERO SECTION */
+
+.hero{
+background:
+linear-gradient(rgba(0,128,0,0.55), rgba(0,128,0,0.55)),
+url('images/herbal-bg.png');
+
+background-size:cover;
+background-position:center;
+
+min-height:550px;
+
 display:flex;
+flex-direction:column;
 align-items:center;
-gap:10px;
+justify-content:center;
+
+color:white;
+text-align:center;
 }
 
-.logo img{
-width:55px;
+.hero h1{
+font-size:50px;
+margin:10px;
+text-shadow:0 4px 15px rgba(0,0,0,0.4);
 }
 
-.logo-text{
-font-weight:700;
-color:#006633;
+.hero p{
 font-size:20px;
 }
 
-.nav-links a{
-margin-left:20px;
-text-decoration:none;
-color:#333;
-font-weight:600;
-}
-
-.nav-links a:hover{
-color:#00a651;
-}
-
-/* HEADER HERO */
-header{
-background:linear-gradient(rgba(0,100,50,0.8), rgba(0,100,50,0.8)),
-url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716');
-background-size:cover;
-background-position:center;
-color:white;
-padding:100px 20px;
-text-align:center;
-}
-
-header img{
-width:120px;
-margin-bottom:15px;
-}
-
-header h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:18px;
-margin-bottom:20px;
-}
-
-.btn{
-background:#00a651;
-color:white;
+.hero button{
 padding:12px 25px;
+margin:10px;
 border:none;
+background:#00c853;
+color:white;
+font-size:16px;
 border-radius:5px;
-text-decoration:none;
-font-weight:600;
-margin:5px;
-display:inline-block;
-transition:0.3s;
+cursor:pointer;
 }
 
-.btn:hover{
-background:#008c45;
-transform:scale(1.05);
+.hero button:hover{
+background:#009624;
 }
 
-/* SECTION */
-section{
-padding:50px 20px;
-max-width:1200px;
-margin:auto;
-}
+/* PRODUCTS */
 
-h2{
+.section{
+padding:50px;
 text-align:center;
-color:#006633;
-margin-bottom:30px;
 }
 
-/* PRODUCTS GRID */
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
 gap:25px;
+padding:20px;
 }
 
 .card{
 background:white;
+padding:15px;
 border-radius:10px;
-padding:20px;
-text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 8px 25px rgba(0,0,0,0.15);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 .card img{
@@ -140,62 +115,45 @@ width:100%;
 height:200px;
 object-fit:cover;
 border-radius:8px;
-margin-bottom:15px;
-}
-
-.card h3{
-color:#006633;
-margin-bottom:10px;
-}
-
-/* ABOUT */
-.about{
-background:white;
-border-radius:10px;
-padding:30px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
 /* WHY CHOOSE */
+
 .why{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+background:white;
+padding:40px;
+margin:40px;
+border-radius:10px;
 }
 
-.why-box{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
+/* CONTACT */
 
-/* FORM */
-form{
+.contact{
 background:white;
-padding:30px;
+padding:40px;
+margin:40px;
 border-radius:10px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
 input, textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
+width:90%;
+padding:10px;
+margin:10px;
 border-radius:5px;
 border:1px solid #ccc;
 }
 
 /* FOOTER */
-footer{
-background:#006633;
+
+.footer{
+background:#0a5c36;
 color:white;
-text-align:center;
 padding:20px;
-margin-top:40px;
+text-align:center;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
+
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -206,23 +164,21 @@ padding:15px;
 border-radius:50%;
 font-size:20px;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
+<!-- HEADER -->
 
-<div class="logo">
-<img src="images/logo.png">
-<div class="logo-text">VibeNext Global LLP</div>
-</div>
+<div class="header">
 
-<div class="nav-links">
+<img src="images/logo.png" class="logo">
+
+<div class="nav">
 <a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
@@ -230,11 +186,11 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 
 </div>
 
+<!-- HERO -->
 
-<!-- HERO HEADER -->
-<header>
+<div class="hero">
 
-<img src="images/logo.png">
+<img src="images/logo.png" style="width:150px;">
 
 <h1>VibeNext Global LLP</h1>
 
@@ -242,32 +198,18 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 
 <p>Email: info@vibenextglobal.com</p>
 
-<a href="#products" class="btn">View Products</a>
+<div>
+<button onclick="location.href='#products'">View Products</button>
+<button onclick="location.href='#contact'">Send Inquiry</button>
+</div>
 
-<a href="#contact" class="btn">Send Inquiry</a>
+</div>
 
-</header>
+<!-- PRODUCTS -->
 
+<div class="section" id="products">
 
-<section class="about">
-
-<h2>About Our Company</h2>
-
-<p>
-VibeNext Global LLP is a trusted exporter of premium herbal and nutraceutical products from India.
-We specialize in exporting moringa powder, aonla powder, ashwagandha, shilajit, jaggery, stevia, turmeric and other herbal products.
-</p>
-
-<p>
-We export to UAE, Saudi Arabia, Europe, USA and global markets.
-</p>
-
-</section>
-
-
-<section id="products">
-
-<h2>Our Export Products</h2>
+<h2>Our Herbal Export Products</h2>
 
 <div class="products">
 
@@ -280,37 +222,19 @@ We export to UAE, Saudi Arabia, Europe, USA and global markets.
 <div class="card">
 <img src="images/aonla.jpg">
 <h3>Aonla Powder</h3>
-<p>Vitamin C rich herbal product.</p>
-</div>
-
-<div class="card">
-<img src="images/stevia.jpg">
-<h3>Stevia</h3>
-<p>Natural zero calorie sweetener.</p>
-</div>
-
-<div class="card">
-<img src="images/turmeric.jpg">
-<h3>Turmeric</h3>
-<p>High curcumin turmeric powder.</p>
+<p>Vitamin C rich herbal supplement.</p>
 </div>
 
 <div class="card">
 <img src="images/ashwagandha.jpg">
 <h3>Ashwagandha</h3>
-<p>Premium herbal supplement.</p>
+<p>High quality herbal supplement.</p>
 </div>
 
 <div class="card">
 <img src="images/shilajit.jpg">
 <h3>Shilajit</h3>
-<p>Purified Himalayan shilajit.</p>
-</div>
-
-<div class="card">
-<img src="images/makhana.jpg">
-<h3>Makhana</h3>
-<p>Premium export quality fox nuts.</p>
+<p>Purified Himalayan Shilajit.</p>
 </div>
 
 <div class="card">
@@ -319,55 +243,61 @@ We export to UAE, Saudi Arabia, Europe, USA and global markets.
 <p>Natural chemical free jaggery.</p>
 </div>
 
+<div class="card">
+<img src="images/makhana.jpg">
+<h3>Makhana</h3>
+<p>Premium export quality fox nuts.</p>
 </div>
 
-</section>
+</div>
 
+</div>
 
-<section>
-
-<h2>Why Choose Us</h2>
+<!-- WHY CHOOSE -->
 
 <div class="why">
 
-<div class="why-box">Direct sourcing from farmers</div>
-<div class="why-box">Export quality packaging</div>
-<div class="why-box">Competitive international pricing</div>
-<div class="why-box">Timely worldwide delivery</div>
-<div class="why-box">Trusted exporter from India</div>
-<div class="why-box">Premium quality products</div>
+<h2>Why Choose VibeNext Global LLP</h2>
+
+<p>✔ Direct sourcing from farmers</p>
+<p>✔ Export quality packaging</p>
+<p>✔ Competitive international pricing</p>
+<p>✔ Trusted herbal exporter from India</p>
 
 </div>
 
-</section>
+<!-- CONTACT -->
 
-
-<section id="contact">
+<div class="contact" id="contact">
 
 <h2>Send Inquiry</h2>
 
-<form>
-
 <input placeholder="Your Name">
+
 <input placeholder="Your Email">
+
 <input placeholder="Country">
+
 <textarea placeholder="Your Requirement"></textarea>
 
-<button class="btn">Send Inquiry</button>
+<br>
 
-</form>
+<button>Send Inquiry</button>
 
-</section>
+</div>
 
+<!-- FOOTER -->
 
-<footer>
+<div class="footer">
 
 © 2026 VibeNext Global LLP | Herbal Exporter from India
 
-</footer>
+</div>
 
+<!-- WHATSAPP -->
 
-<a class="whatsapp" href="https://wa.me/919000000000">💬</a>
+<a href="https://wa.me/919876543210" class="whatsapp">W</a>
 
 </body>
+
 </html>
