@@ -3,256 +3,340 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VibeNext Global LLP | Herbal Exporter</title>
+<title>VibeNext Global LLP | Premium Herbal Exporter from India</title>
 
 <style>
 
-body{
-margin:0;
-font-family:Arial, sans-serif;
-line-height:1.6;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f5;
 }
 
 /* NAVBAR */
-header{
-background:white;
-padding:15px 40px;
-position:sticky;
-top:0;
-z-index:1000;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+
+.navbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-nav{
-text-align:right;
+.navbar a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #1b5e20;
+    font-weight: bold;
 }
 
-nav a{
-margin-left:25px;
-text-decoration:none;
-font-weight:bold;
-color:#2e7d32;
+/* HERO SECTION */
+
+.hero {
+    background: url("images/herbal-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* HERO */
-.hero{
-height:100vh;
-background:url('images/herbal-bg.jpg') no-repeat center center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
+.hero-box {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
 }
 
-.hero-box{
-background:rgba(0,0,0,0.5);
-padding:40px;
-border-radius:10px;
+.hero-box h1 {
+    font-size: 40px;
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
+.hero-box p {
+    font-size: 18px;
 }
 
-.hero p{
-font-size:20px;
-margin-bottom:10px;
-}
-
-.btn{
-display:inline-block;
-padding:12px 25px;
-margin:10px;
-background:#4CAF50;
-color:white;
-text-decoration:none;
-border-radius:5px;
+.button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* PRODUCTS */
-.products{
-padding:60px 20px;
-background:#f5f5f5;
-text-align:center;
+
+.products {
+    padding: 50px;
+    text-align: center;
 }
 
-.product-container{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:25px;
+.products h2 {
+    color: #1b5e20;
 }
 
-.product{
-background:white;
-padding:20px;
-border-radius:10px;
-width:250px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.product img{
-width:100%;
-border-radius:8px;
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    color: #2e7d32;
+}
+
+.product-card ul {
+    text-align: left;
 }
 
 /* CERTIFICATIONS */
-.certifications{
-padding:60px 20px;
-text-align:center;
+
+.certifications {
+    padding: 50px;
+    text-align: center;
 }
 
-/* INQUIRY */
-.inquiry{
-padding:60px 20px;
-background:#f5f5f5;
-text-align:center;
+.certifications h2 {
+    color: #1b5e20;
 }
 
-form{
-max-width:500px;
-margin:auto;
+.certifications span {
+    background: white;
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-input, textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:5px;
+/* CONTACT */
+
+.contact {
+    padding: 50px;
+    text-align: center;
 }
 
-button{
-background:#2e7d32;
-color:white;
-padding:12px 25px;
-border:none;
-border-radius:5px;
-cursor:pointer;
+.contact input,
+.contact textarea {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 12px 40px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 /* FOOTER */
-footer{
-background:#2e7d32;
-color:white;
-text-align:center;
-padding:20px;
+
+.footer {
+    background: #1b5e20;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
 </style>
 
 </head>
+
 <body>
 
 <!-- NAVBAR -->
-<header>
-<nav>
-<a href="#home">Home</a>
+
+<div class="navbar">
+
+<a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#certifications">Certifications</a>
-<a href="#inquiry">Contact</a>
-</nav>
-</header>
+<a href="#contact">Contact</a>
+
+</div>
 
 <!-- HERO -->
-<section id="home" class="hero">
+
+<div class="hero">
 
 <div class="hero-box">
 
 <h1>VibeNext Global LLP</h1>
 
-<p>Trusted Exporter of Herbal & Nutraceutical Products from India</p>
+<p>Premium Herbal Exporter from India</p>
 
 <p>Email: info@vibenextglobal.com</p>
 
-<a href="#products" class="btn">View Products</a>
-
-<a href="#inquiry" class="btn">Send Inquiry</a>
+<a href="#products" class="button">Explore Products</a>
 
 </div>
 
-</section>
+</div>
 
 <!-- PRODUCTS -->
-<section id="products" class="products">
+
+<div id="products" class="products">
 
 <h2>Our Premium Herbal Products</h2>
 
-<div class="product-container">
+<div class="product-grid">
 
-<div class="product">
+<div class="product-card">
 <img src="images/moringa.jpg">
-<h3>Moringa Powder</h3>
-<p>Boosts immunity and overall health.</p>
+<h3>Moringa Powder Benefits</h3>
+<ul>
+<li>Boosts immunity naturally</li>
+<li>Improves energy</li>
+<li>Rich in antioxidants</li>
+<li>Supports heart health</li>
+</ul>
 </div>
 
-<div class="product">
+<div class="product-card">
 <img src="images/aonla.jpg">
-<h3>Aonla Powder</h3>
-<p>Rich in Vitamin C and antioxidants.</p>
+<h3>Aonla Powder Benefits</h3>
+<ul>
+<li>Rich in Vitamin C</li>
+<li>Improves digestion</li>
+<li>Boosts immunity</li>
+<li>Powerful antioxidant</li>
+</ul>
 </div>
 
-<div class="product">
+<div class="product-card">
 <img src="images/ashwagandha.jpg">
-<h3>Ashwagandha</h3>
-<p>Improves strength and reduces stress.</p>
+<h3>Ashwagandha Benefits</h3>
+<ul>
+<li>Reduces stress</li>
+<li>Improves strength</li>
+<li>Boosts immunity</li>
+<li>Enhances stamina</li>
+</ul>
 </div>
 
-<div class="product">
+<div class="product-card">
 <img src="images/shilajit.jpg">
-<h3>Shilajit</h3>
-<p>Enhances energy and stamina.</p>
+<h3>Shilajit Benefits</h3>
+<ul>
+<li>Boosts energy</li>
+<li>Improves stamina</li>
+<li>Supports brain health</li>
+<li>Anti-aging properties</li>
+</ul>
+</div>
+
+<div class="product-card">
+<img src="images/turmeric.jpg">
+<h3>Turmeric Benefits</h3>
+<ul>
+<li>Powerful anti-inflammatory</li>
+<li>Boosts immunity</li>
+<li>Improves digestion</li>
+<li>Rich in antioxidants</li>
+</ul>
+</div>
+
+<div class="product-card">
+<img src="images/jaggery.jpg">
+<h3>Jaggery Benefits</h3>
+<ul>
+<li>Improves digestion</li>
+<li>Rich in iron</li>
+<li>Boosts immunity</li>
+<li>Natural detoxifier</li>
+</ul>
+</div>
+
+<div class="product-card">
+<img src="images/stevia.jpg">
+<h3>Stevia Benefits</h3>
+<ul>
+<li>Natural sweetener</li>
+<li>Zero calories</li>
+<li>Good for diabetics</li>
+<li>High export demand</li>
+</ul>
 </div>
 
 </div>
 
-</section>
+</div>
 
 <!-- CERTIFICATIONS -->
-<section id="certifications" class="certifications">
+
+<div id="certifications" class="certifications">
 
 <h2>Certifications</h2>
 
-<p>IEC Registered Exporter</p>
-<p>FSSAI Certified</p>
-<p>APEDA Registered</p>
-<p>ISO Standards Maintained</p>
+<span>IEC Registered Exporter</span>
+<span>FSSAI Certified</span>
+<span>APEDA Registered</span>
+<span>ISO Suppliers</span>
 
-</section>
+</div>
 
-<!-- INQUIRY -->
-<section id="inquiry" class="inquiry">
+<!-- CONTACT -->
+
+<div id="contact" class="contact">
 
 <h2>Send Export Inquiry</h2>
 
-<form action="https://formsubmit.co/priyankavibenextglobal@gmail.com" method="POST">
+<form action="https://formsubmit.co/info@vibenextglobal.com" method="POST">
 
 <input type="hidden" name="_captcha" value="false">
 
+<br>
+
 <input type="text" name="Name" placeholder="Your Name / Company Name" required>
 
-<input type="email" name="Email" placeholder="Your Email Address" required>
+<br>
+
+<input type="email" name="Email" placeholder="Your Email" required>
+
+<br>
 
 <input type="text" name="Country" placeholder="Country">
 
-<textarea name="Requirement" placeholder="Your Requirement"></textarea>
+<br>
+
+<textarea name="Requirement" placeholder="Your requirement"></textarea>
+
+<br>
 
 <button type="submit">Send Inquiry</button>
 
 </form>
 
-</section>
+</div>
 
 <!-- FOOTER -->
-<footer>
 
-<p>© 2026 VibeNext Global LLP</p>
+<div class="footer">
 
-<p>Email: info@vibenextglobal.com</p>
+© 2026 VibeNext Global LLP | Email: info@vibenextglobal.com
 
-</footer>
+</div>
 
 </body>
 </html>
